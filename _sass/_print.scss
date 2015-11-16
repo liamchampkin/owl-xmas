@@ -1,3 +1,16 @@
+/* css starts here */
 h1, h2, h3{
 	font-family: $font-stack;
+}
+
+.clear-after:after{
+	content: " ";
+  	display: table;
+  	clear: both;
+}
+
+.clear-before:before{
+	content: " ";
+  	display: table;
+  	clear: both;
 }
