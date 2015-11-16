@@ -1,0 +1,521 @@
+/**
+ * =============================================================================
+ * Carousel
+ * =============================================================================
+ *
+ * This file deals with:
+ *  * carousels
+ */
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  padding: 0 70px;
+}
+
+.carousel-container > .carousel {
+  position: relative;
+  padding: 0;
+  list-style-type: none;
+  width: 20000em;
+  margin: 0;
+}
+
+.carousel-container > .carousel-control {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+  .carousel-container > .carousel-control > .mask {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #c2e2f4;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .carousel-container > .carousel-control.disabled > .mask {
+    cursor: not-allowed;
+    background-color: #e2f2f4;
+  }
+
+.carousel-container > .carousel-control-next {
+  right: 0;
+  border-radius: 18px 0 0 18px;
+}
+.carousel-container > .carousel-control-prev {
+  left: 0px;
+  border-radius: 0 18px 18px 0;
+}
+.carousel-container > .carousel-control > .mask > .icon {
+  display: block;
+  background-color: #cf1c6d;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  border-radius: 18px;
+  width: 34px;
+  height: 34px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-left: -19px;
+  margin-top: -17px;
+}
+  .carousel-container > .carousel-control.disabled > .mask > .icon {
+    background-color: grey !important;
+  }
+.carousel-container > .carousel-control > .mask:hover > .icon {
+  background-color: #1E1E1E;
+}
+
+.carousel > .carousel-item {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding: 16px;
+  width: 158px;
+  border-radius: 6px;
+  background: #71c3cd;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+}
+
+.carousel:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* move the image to the top if it's the first child - the card style carousel item */
+.carousel > .carousel-item > img:first-child {
+  position: relative;
+  top: -16px;
+  left: -16px;
+  margin-bottom: -16px;
+}
+
+.carousel-item > .navigation-list > .navigation-list-item > a {
+  width: 100%;
+}
+
+.carousel-item > h3 {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 6px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.carousel-item > .carousel-item-details {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.no-touch .revealing-carousel > .carousel > .carousel-item > .carousel-item-details {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height .5s ease;
+     -moz-transition: height .5s ease;
+      -ms-transition: height .5s ease;
+          transition: height .5s ease;
+}
+
+.no-touch .revealing-carousel > .carousel-open > .carousel-item {
+  max-height: 390px;
+}
+.no-touch .revealing-carousel > .carousel-open > .carousel-item > .carousel-item-details {
+  height: 230px;
+}
+
+
+/**
+ * =============================================================================
+ * Gallery Carousel
+ * =============================================================================
+ *
+ * This section deals with retheming the carousel to become a "Slide Show"
+ *
+ */
+
+.gallery-carousel {
+  padding: 0px;
+  overflow: hidden;
+}
+
+.gallery-carousel .carousel {
+  margin-left: 71px;
+}
+
+.gallery-carousel .carousel > .carousel-item {
+  margin-right: 1px;
+  padding: 0px;
+  width: 138.8px;
+  border-radius: 0px;
+  background: transparent !important;
+  height: 86px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-carousel .carousel .carousel-item img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.6;
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
+}
+
+.gallery-carousel .carousel .carousel-item:hover img,
+.gallery-carousel .carousel .carousel-item.active img {
+  opacity: 1;
+}
+
+.gallery-carousel  > .carousel-control {
+  position: absolute;
+
+  top: auto;
+  bottom: 0px;
+  left: 0px;
+
+  background: #CE1B6C;
+  border-radius: 0px;
+  width: 70px;
+  height: 86px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30px 40px;
+  cursor: pointer;
+}
+
+.gallery-carousel  > .carousel-control-prev {
+  display: block;
+  position: absolute;
+
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNi4zNzVweCIgaGVpZ2h0PSI5Ljg3NXB4IiB2aWV3Qm94PSIwIDAgNi4zNzUgOS44NzUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYuMzc1IDkuODc1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjUuNDU0LDAuNzIgMS4yMzEsNC45ODMgNS40OTQsOS4yMDIgIi8+DQo8L3N2Zz4NCg==);
+}
+
+.gallery-carousel  > .carousel-control-next {
+  left: auto;
+  right: 0px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNi4zNzVweCIgaGVpZ2h0PSI5Ljg3NXB4IiB2aWV3Qm94PSIwIDAgNi4zNzUgOS44NzUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYuMzc1IDkuODc1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjAuODgsOS4yMDIgNS4xMjMsNC45NiAwLjg4LDAuNzIgIi8+DQo8L3N2Zz4NCg==);
+}
+
+.gallery-carousel > .carousel-control > .mask {
+  display: none !important;
+}
+
+.gallery-carousel > .carousel-control:after {
+  display: none !important;
+}
+
+.gallery-carousel .carousel > .carousel-item .carousel-caption {
+  display: none;
+}
+
+.carousel-gallery {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1px;
+  position: relative;
+}
+
+.carousel-gallery img {
+  display: block;
+  width: 100%;
+}
+
+.carousel-gallery .gallery-caption {
+  display: block;
+  position: absolute;
+
+  bottom: 0px;
+  left: 0px;
+
+  width: 100%;
+  min-height: 20px;
+  overflow: hidden;
+}
+
+.carousel-gallery .gallery-caption a.toggle {
+  display: block;
+
+  background: #fff;
+  padding: 3px 6px 0px 6px;
+
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: center;
+
+  width: 40px;
+
+  color: #666;
+  cursor: pointer;
+  border: none;
+}
+
+.carousel-gallery .gallery-caption p {
+  display: none;
+  clear: both;
+  background: #fff;
+  padding: 10px 10px 13px 10px;
+  margin: 10px 0 0 0;
+}
+
+/* medium screens */
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  .gallery-carousel .carousel > .carousel-item { 
+    width: 168.8px; 
+    height: 106px;
+  }
+
+  .gallery-carousel  > .carousel-control {
+    height: 108px;
+  }
+
+}
+
+/* biggest screens */
+@media (min-width: 1280px) {
+
+  .gallery-carousel .carousel > .carousel-item { 
+    width: 182.85px; 
+    height: 110px;
+  }
+
+  .gallery-carousel  > .carousel-control {
+    height: 115px;
+  }
+
+}
+
+.walkthrough-carousel-navigation > .pagination {
+  text-align: left;
+}
+
+.walkthrough-carousel-navigation > .pagination > .pagination-item > a > span {
+  overflow: hidden;
+  width: auto;
+  max-width: 0;
+  height: 0;
+  max-height: 100%;
+  display: block;
+  -webkit-transition: max-width .5s ease-out;
+  -moz-transition: max-width .5s ease-out;
+  -ms-transition: max-width .5s ease-out;
+  transition: max-width .5s ease-out;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.walkthrough-carousel-navigation > .pagination:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.walkthrough-carousel-navigation > .pagination > .pagination-item {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.walkthrough-carousel-navigation > .pagination > .pagination-item > a {
+  width: auto;
+  min-width: 28px;
+}
+
+.walkthrough-carousel-navigation > .pagination {
+  counter-reset: walkthrough-item;
+}
+
+.walkthrough-carousel-navigation > .pagination > .pagination-item > a:before {
+  counter-increment: walkthrough-item;
+  content: counter(walkthrough-item);
+  display: block;
+}
+
+.walkthrough-carousel-navigation > .pagination > .pagination-item > a:hover:before {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+}
+
+.walkthrough-carousel-navigation > .pagination > .pagination-item > a:hover {
+  background: #CF1C6D;
+}
+.walkthrough-carousel-navigation > .pagination > .pagination-item > a:hover span {
+  height: auto;
+}
+.csstransitions .walkthrough-carousel-navigation > .pagination > .pagination-item > a:hover span {
+  max-width: 200px;
+}
+
+
+
+
+
+.walkthrough-carousel + .walkthrough-content {
+  margin-top: 50px;
+  position: relative;
+}
+
+.walkthrough-carousel + .walkthrough-content .walkthrough-description {
+  padding-left: 80px;
+}
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item {
+  border-bottom: 1px solid #64686C;
+}
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item h3 {
+  width: 240px;
+  float: left;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-right: 20px;
+}
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item .walkthrough-counter {
+  display: block;
+  height: 58px;
+  background: #63676B;
+  margin-right: 20px !important;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 58px;
+  font-size: 22px;
+  position: relative;
+  color: #63676B;
+}
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item .walkthrough-counter span {
+  position: relative;
+  z-index: 2;
+}
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item .walkthrough-counter:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  border-radius: 50%;
+}
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item .walkthrough-description-content {
+  width: 360px;
+  float: left;
+}
+@media (min-width: 1024px) {
+  .walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item .walkthrough-description-content {
+    width: 600px;
+  }
+}
+@media (min-width: 1280px) {
+  .walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item .walkthrough-description-content {
+    width: 820px;
+  }
+}
+.walkthrough-carousel + .walkthrough-content .walkthrough-description-items > .walkthrough-description-item .walkthrough-description-content :first-child {
+  margin-top: 0;
+}
+
+
+
+
+.video-carousel .carousel-container {
+  padding: 0 50px;
+}
+.video-carousel .video-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.video-carousel .carousel .carousel-item {
+  width: 100px;
+  height: 56px;
+  margin: 0;
+  border-radius: 0;
+}
+@media (min-width: 1024px) {
+  .video-carousel .carousel .carousel-item {
+    width: 120px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .video-carousel .carousel .carousel-item {
+    width: 160px;
+    height: 90px;
+  }
+}
+
+
+.video-carousel .carousel-control > .mask {
+  background: #CE1B6C;
+  border-radius: 0;
+}
+.video-carousel-navigation > .carousel-item  {
+  padding: 0;
+}
+.video-carousel .scrollbar {
+  width: 100%;
+}
+.video-carousel-navigation > .carousel-item img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+}
+.video-carousel-navigation > .carousel-item > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.video-carousel-navigation > .carousel-item.active > a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #CE1B6C;
+}
+video-carousel-navigation > .carousel-item .video-title {
+  display: none;
+}
+.video-carousel .carousel-control > .mask > .icon,
+.video-carousel .carousel-container > .carousel-control.disabled > .mask > .icon {
+  border: none;
+  background: transparent !important;
+  box-shadow: none;
+}
+.video-carousel .carousel-control.disabled > .mask {
+  background: #ccc;
+}

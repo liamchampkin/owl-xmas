@@ -1,0 +1,31 @@
+/**
+ * =============================================================================
+ * Tables
+ * =============================================================================
+ *
+ * This file deals with:
+ *  * tables
+ */
+
+table {
+  background: #fff;
+  border: 1px solid #64686c;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+table thead th { 
+  font-weight: 700;
+  background: #70c3cd; 
+}
+
+table th,
+table td {
+  border: 1px solid #999;
+  padding: 15px 20px;
+  text-align: left;
+  font-weight: 400;
+}
+
+table .clear { background: none; }

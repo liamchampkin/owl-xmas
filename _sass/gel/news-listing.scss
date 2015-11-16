@@ -1,0 +1,75 @@
+.news-listing {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  clear: both;
+}
+
+.news-listing > .news-item {
+  border-bottom: 1px solid #c0c2c4;
+  padding-top: 20px;
+}
+
+.news-listing > .news-item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.news-listing > .news-item .button {
+  display: inline;
+  font-weight: bold;
+}
+
+.news-item-content > h3 {
+  margin-top: 0;
+}
+
+.lesson-plan {
+  border-bottom: 1px solid #64686c;
+  margin-bottom: 20px;
+}
+
+.lesson-plan .news-listing {
+  height: 762px;
+}
+
+
+.lesson-plan .news-item {
+  border: 0;
+}
+
+.lesson-plan .news-item h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+
+.lesson-plan .mission-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.lesson-plan .mission-list > .mission-item {
+  border-radius: 20px;
+  border: 1px solid #dfe0e1;
+  padding: 20px;
+  margin-bottom: 20px;
+  float:left;
+  width: 100%; 
+}
+
+.lesson-plan .mission-list > .mission-item img{
+  border-radius: 20px;
+  height: 160px;
+}
+
+.lesson-plan .mission-list > .active {
+  border-color: #63676b;
+  background-color: #dfe0e1;
+}
+
+.lesson-plan .eleven-col {
+  margin-left: 0;
+}

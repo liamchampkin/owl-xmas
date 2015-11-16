@@ -1,0 +1,139 @@
+/**
+ * =============================================================================
+ * Content blocks
+ * =============================================================================
+ *
+ * This file deals with:
+ *  * Product intros
+ *  *
+ */
+
+/* IE */
+main {
+  display: block;
+}
+
+.header-block-information {
+  border-bottom: 1px solid #64686c;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.header-block-information:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.header-block-information > h2:first-child {
+  margin-top: 0;
+}
+
+.header-block-information > .overview-image {
+  float: left;
+  margin-right: 20px;
+}
+.header-block-information > .right-overview-image {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.header-block-information > .right-overview-image + .lead-paragraph {
+  margin-top: 0;
+}
+
+.header-block-information > h3 {
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.js .header-block-information-collapsible {
+  display: none;
+}
+.js .header-block-information-collapsible.header-block-information-opened {
+  display: block;
+}
+
+
+
+/***********************************************************************
+ ***********************************************************************
+ ****** TODO: THIS NEEDS TO BE MOVED OUT OF THE MAIN PRODUCT LOGO ******
+ ***********************************************************************
+ ***********************************************************************/
+.main-product-logo .read-more {
+  display: block;
+  padding-right: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #63676b;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main-product-logo .read-more:hover:after {
+  background-color: #000 !important;
+}
+@media (max-width: 1023px) {
+  .main-product-logo .read-more {
+    top: -23px;
+    bottom: auto;
+    padding-right: 0;
+    width: 40px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .main-product-logo .product-title + .read-more,
+  .main-product-logo .product-name + .read-more {
+    top: 3px;
+  }
+}
+
+.main-product-logo .read-more:after {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOTYwcHgiIGhlaWdodD0iNTdweCIgdmlld0JveD0iMCAwIDk2MCA1NyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOTYwIDU3IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iNy4yNywzLjYzNyAzLjYzNCwwIDAsMy42MzcgIi8+DQo8cG9seWxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjAuMjcsMjAgMy45MDYsMjMuNjM3IDcuNTQxLDIwICIvPg0KPC9zdmc+DQo=);
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #CE1B6C;
+  border-radius: 9px;
+  border: 1px solid #fff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  right: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+}
+.main-product-logo .read-more-show:after {
+  background-position: 5px -13px;
+}
+
+.main-product-logo .read-more-hide:after {
+  background-position: 5px 7px;
+}
+@media (max-width: 1023px) {
+  .main-product-logo .read-more:after {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    top: 50px;
+    right: 5px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTcuMTY3cHgiIGhlaWdodD0iMzcuNjY3cHgiIHZpZXdCb3g9IjAgMCAxNy4xNjcgMzcuNjY3IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNy4xNjcgMzcuNjY3IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjE1LjAxNSw4LjI3IDguOTU1LDIuMjA4IDIuODk4LDguMjcgIi8+DQo8cG9seWxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIyLjUyMywyOS42NCA4LjU4MywzNS43MDIgMTQuNjQsMjkuNjQgIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==);
+  }
+  .main-product-logo .read-more-show:after {
+    background-position: 6px -17px;
+  }
+  .main-product-logo .read-more-hide:after {
+    background-position: 6px 9px;
+  }
+}
+

@@ -1,0 +1,157 @@
+::selection {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+::-webkit-selection {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+::-moz-selection {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+::-ms-selection {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body {
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+a {
+  border-bottom: 1px dotted #cf1c6d;
+  text-decoration: none;
+  color: #cf1c6d;
+}
+
+a:hover,
+a:focus {
+  background-color: #cf1c6d;
+  color: #fff;
+  /*border: 0;*/
+}
+
+a:active {
+  color: #fff;
+  background-color: #1e1e1e;
+  /*border: 0;*/
+}
+
+a img {
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 48px;
+  margin-bottom: 54px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 33px;
+  margin-bottom: 24px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 12px;
+}
+
+small {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 5px 0px 15px 0px;
+}
+
+.small-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.semi-bold { 
+  font-weight: 600 !important;
+}
+
+.thin {
+  font-weight: 300 !important;
+}
+
+/* Colours */
+
+.dark-grey      { color: #63676B; }
+.pink           { color: #cf1c6d; }
+
+/* Alignment */
+
+.align-right    { text-align: right; }
+.align-left     { text-align: left; }
+.align-center   { text-align: center; }
+
+
+.main-product-logo {
+  height: 73px;
+  line-height: 58px;
+  padding-left: 110px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: relative;
+}
+.main-product-logo .supplementary-details {
+  font-size: 18px;
+  font-weight: 500;
+}
+.main-product-logo .hide {
+  visibility: hidden;
+}
+
+.small-link {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.lead-paragraph {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 1em;
+}
+
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .lead-paragraph {
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .small-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,139 @@
+.pagination {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  clear: both;
+}
+
+.pagination > li {
+  display: inline-block;
+}
+
+.pagination > li > a {
+  border: 0;
+  color: #333333;
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.pagination > .pagination-item > a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.pagination > .pagination-item {
+  font-weight: 700;
+}
+
+.pagination > .pagination-item > a {
+  display: block;
+  background-color: #dfe0e1;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  text-align: center;
+
+}
+
+.pagination > .pagination-item > .active {
+  background-color: #cf1c6d !important;
+  color: #fff;
+}
+
+.pagination > .pagination-all {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #dfe0e1;
+}
+
+.pagination > .pagination-previous {
+  margin-right: 10px;
+}
+
+.pagination > .pagination-next {
+  margin-left: 10px;
+}
+
+.pagination > .pagination-next > a,
+.pagination > .pagination-previous > a,
+.pagination > .pagination-all > a {
+  width: auto;
+  background: transparent;
+  border-radius: 0 !important;
+  padding: 0 4px;
+}
+
+
+.pagination .pagination-previous:hover a,
+.pagination .pagination-next:hover a,
+.pagination .pagination-all:hover a {
+  background-color: #cf1c6d;
+  color: #fff;
+}
+
+.nav-pagination {
+ text-align: center;
+}
+
+.pagination a, .pagination .current, .pagination-all a {
+ display: inline-block;
+ border: 0;
+ color: #333333;
+ line-height: 28px;
+ font-weight: 700;
+ font-size: 18px;
+ cursor: pointer;
+ background-color: #dfe0e1;
+ width: 28px;
+ height: 28px;
+ border-radius: 14px;
+ text-align: center;
+ text-decoration: none;
+ -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+     -ms-transition: all 0.3s ease;
+         transition: all 0.3s ease;
+}
+.pagination .current {
+ background-color: #cf1c6d;
+ color: #fff;
+}
+.pagination a:hover {
+ background: #333;
+ color: #fff;
+}
+.pagination .previous_page,
+.pagination .next_page,
+.pagination-all a {
+ width: auto;
+ background: none;
+}
+.pagination .previous_page {
+ margin-right: 10px;
+}
+.pagination .next_page {
+ margin-left: 10px;
+}
+.pagination .previous_page:hover,
+.pagination .next_page:hover,
+.pagination-all a:hover {
+ background: none;
+ color: #cf1c6d;
+}
+.pagination-all {
+ margin-left: 10px;
+ padding-left: 10px;
+ border-left: 1px solid #dfe0e1;
+ display:inline-block;
+}
+.lesson-plan-pagination .pagination > .pagination-item {
+  display: inline-block;
+  margin-right: 8px;
+}

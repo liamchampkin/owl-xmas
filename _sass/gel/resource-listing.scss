@@ -1,0 +1,155 @@
+/**
+ * =============================================================================
+ * Resource listings
+ * =============================================================================
+ *
+ * This file deals with:
+ *  * resource listing (sortable) tables
+ */
+
+.resource-listing {
+  border: none;
+}
+
+.resource-listing thead th {
+  font-weight: normal;
+  background: transparent;
+}
+.resource-listing th > a {
+  color: #1E1E1E;
+  border: 0;
+}
+
+.resource-listing th,
+.resource-listing td {
+  border-width: 1px 0 1px 0;
+}
+
+.resource-listing th a {
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+}
+.resource-listing th a:hover {
+  background: transparent;
+}
+
+.resource-listing th a .icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -11px;
+}
+
+.resource-listing th .table-sorter .icon {
+  background: #dddedf;
+}
+.resource-listing th .table-sorter.active .icon {
+  background: #ce1b6c;
+}
+
+.resource-listing .resource-item > td:first-child,
+.resource-listing > thead > tr > th:first-child {
+  padding-left: 0;
+}
+.resource-listing .resource-item > td:last-child,
+.resource-listing > thead > tr > th:last-child {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.resource-listing .resource-item > td {
+  vertical-align: top;
+}
+
+.resource-listing .resource-item > td > h3 {
+  font-size: 18px;
+  margin: -6px 0 0 0;
+}
+.resource-listing .resource-item > td > h3 + p {
+  margin-top: 0;
+}
+
+.resource-listing {
+  font-size: 14px;
+}
+
+.resource-listing .resource-item > .resource-file {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.resource-listing .resource-item > .resource-file > a {
+  position: relative;
+}
+
+.resource-listing .resource-item > .resource-file.video {
+  padding-top: 15px;
+}
+.resource-listing .resource-item > .resource-file.video img {
+  cursor: pointer;
+}
+
+.resource-listing .resource-item > .resource-file > a > .icon {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  margin-left: -18px;
+}
+
+@media (min-width: 1280px) {
+  .resource-listing .resource-item > .resource-file {
+    padding-top: 78px;
+  }
+  .resource-listing .resource-item > .resource-file > a > .icon {
+    top: -60px;
+    margin-left: -22px;
+  }
+}
+
+
+/* Fix for dropdown containers widths */
+
+.resource-filter-container form {
+  height: 80px;  
+}
+
+.resource-filter-container form + .clear-filters {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.resource-filter-container form + .clear-filters a {
+  color: #323232;
+  border-bottom: 1px dotted transparent;
+}
+.resource-filter-container form + .clear-filters a:hover,
+.resource-filter-container form + .clear-filters a:focus {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+}
+
+.resource-filter-container .stylised-dropdown-container {
+  width: 122px;
+  margin: 15px 10px 0 0px !important;
+}
+
+/** normalise differences between webkit and gecko */
+.resource-filter-container select {
+  display: inline-block;
+}
+
+.resource-filter-container .stylised-dropdown-container:last-of-type {
+  margin-right: 0px !important;
+}
+
+/* medium screens */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .resource-filter-container .stylised-dropdown-container { width: 146px; }
+}
+
+/* biggest screens */
+@media (min-width: 1280px) {
+  .resource-filter-container .stylised-dropdown-container { width: 194px; }
+}

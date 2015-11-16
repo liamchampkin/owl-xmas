@@ -1,0 +1,173 @@
+body {
+    background-color: #c3dcea;
+    background-image: none;
+ }
+
+#header {
+    height: 174px !important;
+}
+
+#main{
+	background-color: white;
+}
+
+.dropdown-menu{
+	box-shadow: none;
+}
+
+.tab-content h2 {
+	color: black !important;
+	margin: 20px 0 35px;
+}
+
+body #content .nav-tabs > li > a {
+	background-color: $banner-bg-colour;
+	border: 1px solid white;
+	border-bottom: none;
+	color: $nav-tab-colour;
+	font-family: $font-stack;
+	font-size: 23px;
+	padding: 10px 44px;
+	text-decoration: none;
+	margin-right: 15px;
+	border-top-left-radius: $border-radius;
+	border-top-right-radius: $border-radius;
+	font-weight: bold;
+}
+
+.nav-tabs{
+	border-bottom: 0;
+}
+
+body #content .nav-tabs > li.active > a{
+	background-color: $nav-tab-active-bg-colour;
+}
+
+section#body{
+	padding-top: 0px;
+	width: 100%;
+
+}
+
+.banner-top{
+	background-color: $banner-bg-colour;
+	height: 210px;
+	padding: $page-margin;
+	h1, h2{
+		color: $banner-text-colour;
+		max-width: 700px;
+	}
+	h2{
+		font-size: 25px;
+		
+	}
+}
+
+body.fun-ideas .banner-top h1,
+body.fun-ideas .banner-top h2{
+	color: white;
+}
+
+.nav.nav-tabs {
+    margin-top: -41px;
+    position: relative;
+}
+
+.section-book{
+	margin: 20px 0 40px 0;
+	border-radius: $border-radius;
+	h3{
+		color: black;
+	}
+	p {
+		font-size: 17px;
+		line-height: 1.5;
+		margin: 0 0 10px;
+		color: black;
+	}
+}
+
+#tabContent{
+	padding: 0 $page-margin;
+}
+
+.book-green{
+	background-color: $book-green;
+}
+
+.book-orange{
+	background-color: $book-orange;
+}
+
+.book-pink{
+	background-color: $book-pink;
+}
+
+.book-blue-light{
+	background-color: $book-blue-light;
+}
+
+.book-yellow{
+	background-color: $book-yellow;
+}
+
+.book-image{
+	width: $book-image-width;
+	img{
+		width: 100%;
+	}
+}
+
+.book-image,
+.book-text{
+	margin: 20px;
+}
+
+.book-text{
+	width: 420px;
+}
+
+.book-left{
+	.book-image{
+		float: left;
+	}
+	.book-text{
+		margin-right: 33px;
+		float: right;
+	}
+}
+
+.book-right{
+	.book-image{
+		float: right;
+	}
+	.book-text{
+		margin-left: 33px;
+		float: left;
+	}
+}
+
+a.btn-gel{
+	background-color: $button-gel-bg-colour;
+	color: $button-gel-colour !important;
+	padding: 10px 40px;
+	margin: 30px 20px 0 0;
+	border-radius: $border-radius;
+	border: $button-gel-stroke;
+	text-decoration: none;
+	font-family: $font-stack;
+	position: relative;
+	float: left;
+	font-size: 17px;
+	line-height: 1.5;
+	&:hover{
+		background-color: $pink-gel;
+		color: $button-gel-bg-colour;
+	}
+}
+
+h3 {
+	font-size: 23px;
+	line-height: 1.5;
+	margin-bottom: 16px;
+}

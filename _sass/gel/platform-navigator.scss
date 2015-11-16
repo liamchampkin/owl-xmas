@@ -1,0 +1,978 @@
+@media (min-width: 1280px) {
+  #platform-navigator > li h2 {
+    font-size: 16px;
+  }
+}
+
+.js #platform-navigation {
+  position: absolute;
+  right: 80px;
+  top: 0;
+  z-index: 100;
+}
+#platform-navigation {
+  width: 760px;
+  background: #efeff0;
+  margin: 0;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.2),
+              -1px -1px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.2),
+              -1px -1px 3px rgba(0,0,0,0.2);
+  -ms-box-shadow: 1px 1px 3px rgba(0,0,0,0.2),
+              -1px -1px 3px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2),
+              -1px -1px 3px rgba(0,0,0,0.2);
+}
+#platform-navigation-indicator {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: -14px;
+  border-left: 14px solid #efeff0;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+}
+
+#platform-navigation-content {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  list-style-type: none;
+  height: 380px;
+}
+
+#platform-navigation-content > li {
+  padding: 20px 0 0 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  height: 380px;
+}
+#platform-navigation-content > li > .navigator-content {
+}
+#platform-navigation-content > li > .navigator-content:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 20px;
+}
+
+#platform-navigator #navigator-first-time-here a { 
+  background: #fff;
+  border: 2px solid #70C2CC;
+}
+#platform-navigator #navigator-first-time-here.active a h2,
+#platform-navigator #navigator-first-time-here a:hover h2 {
+  color: #1e1e1e !important;
+}
+#platform-navigator #navigator-first-time-here.active a, 
+#platform-navigator #navigator-first-time-here a:hover { 
+  border: 2px solid #CE1B6C;
+}
+
+#platform-navigation-content .navigator-content .tab-container {
+  clear: none;
+}
+
+
+#platform-navigation-content .tab-navigation > .active > a {
+  background: #efeff0;
+  border-bottom-color: #efeff0;
+}
+
+
+
+
+
+#platform-navigator .platform-navigation-item a {
+  border: 0;
+  padding: 100px 10px 0 10px;
+  background: #70c2cc;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#platform-navigator .platform-navigation-item a:before {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  content: '';
+  z-index: 2;
+  background-size: 80px 80px;
+}
+  #platform-navigator #navigator-first-time-here a:before,
+  body.platform-nav-top #platform-navigator li#navigator-first-time-here > a:before {
+    background-image: url(../images/owl-nav-tile.png) !important;
+  }
+  #platform-navigator #navigator-first-time-here a:hover:before,
+  #platform-navigator #navigator-first-time-here.active a:before,
+  body.platform-nav-top #platform-navigator li#navigator-first-time-here.active > a:before,
+  body.platform-nav-top #platform-navigator li#navigator-first-time-here > a:hover:before {
+    background-image: url(../images/owl-nav-tile-active.png) !important;
+  }
+  #platform-navigator #navigator-school-improvement-pathways a:before,
+  body.platform-nav-top #platform-navigator li#navigator-school-improvement-pathways > a:before {
+    background-image: url(../images/pathways-nav-tile.png) !important;
+  }
+  #platform-navigator #navigator-pdbp a:before,
+  body.platform-nav-top #platform-navigator li#navigator-pdbp > a:before {
+    background-image: url(../images/pdbp-nav-tile.png) !important;
+  }
+  #platform-navigator #navigator-tar a:before,
+  body.platform-nav-top #platform-navigator li#navigator-tar > a:before {
+    background-image: url(../images/tar-nav-tile.png) !important;
+  }
+  #platform-navigator #navigator-ebooks a:before,
+  body.platform-nav-top #platform-navigator li#navigator-ebooks > a:before {
+    background-image: url(../images/ebooks-nav-tile.png) !important;
+  }
+  #platform-navigator #navigator-online-learning a:before,
+  body.platform-nav-top #platform-navigator li#navigator-online-learning > a:before {
+    background-image: url(../images/online-learning-nav-tile.png) !important;
+  }
+
+
+#platform-navigator .platform-navigation-item.active a h2,
+#platform-navigator .platform-navigation-item a:hover h2 {
+  color: #fff;
+}
+#platform-navigator .platform-navigation-item.active a {
+  background: #CE1B6C;
+}
+#platform-navigator .platform-navigation-item .tile-title {
+  position: relative;
+  z-index: 2;
+}
+#platform-navigator .platform-navigation-item .tile-cover {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  background: #CE1B6C;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+#navigator-first-time-here h2:hover,
+#navigator-first-time-here h2.active {
+  color: #1e1e1e;
+}
+
+#platform-navigation h3 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+#platform-navigation h3 + p {
+  margin-top: 0;
+}
+#platform-navigation p {
+  font-size: 14px;
+}
+
+
+#platform-navigation .list-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #c0c2c4;
+}
+
+#platform-navigation .list-navigation > li {
+  border-bottom: 1px solid #c0c2c4;
+  margin-bottom: 0;
+}
+#platform-navigation .list-navigation > li > a {
+  position: relative;
+  display: block;
+  border: none;
+  padding: 10px;
+  color: #323232;
+  font-weight: 700;
+  font-size: 14px;
+}
+#platform-navigation #navigation-first-time-here .icon-list-navigation > li > a, 
+#platform-navigation #navigation-school-improvement-pathways .icon-list-navigation > li > a {
+  padding-left: 54px;
+}
+#platform-navigation .icon-list-navigation > li > a {
+  padding-left: 48px;
+  min-height: 38px;
+}
+#platform-navigation .list-navigation > li > a:hover {
+  background: #CE1B6C;
+  color: #fff;
+}
+#platform-navigation .icon-list-navigation > li > a:hover,
+#platform-navigation .icon-list-navigation > li > a:focus,
+#platform-navigation .icon-list-navigation > li > a:active {
+  background: transparent;
+  color: #1e1e1e;
+}
+
+#platform-navigation .video-navigation > li > a > span {
+  font-weight: 500;
+  display: inline-block;
+}
+
+#platform-navigation #navigation-first-time-here .icon-list-navigation > li > a:after,
+#platform-navigation #navigation-school-improvement-pathways .icon-list-navigation > li > a:after {
+  width: 38px;
+  height: 38px;
+}
+#platform-navigation .icon-list-navigation > li > a:after {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  content: "";
+  background-color: #63676b;
+  border-radius: 50%;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+#platform-navigation .video-navigation > li > a.active:after,
+#platform-navigation .video-navigation > li > a:hover:after {
+  background-color: #ce1b6c;
+}
+#platform-navigation .video-navigation > li > a:focus {
+  background-color: transparent;
+}
+
+
+/** Icons */
+#platform-navigation .video-navigation > li > a:after {
+  background-image: url(../images/icon-video.png);
+}
+#platform-navigation .icon-list-navigation .icon-pathways:after {
+  background-image: url(../images/navigator-icon-pathways.png);
+}
+#platform-navigation .icon-list-navigation .icon-people:after {
+  background-image: url(../images/navigator-icon-people.png);
+}
+#platform-navigation .icon-list-navigation .icon-pencil:after {
+  background-image: url(../images/navigator-icon-pencil.png);
+  background-position: 9px center;
+}
+#platform-navigation .icon-list-navigation .icon-maths:after {
+  background-image: url(../images/navigator-icon-maths.png);
+}
+
+#platform-navigation .icon-list-navigation .icon-heart:after {
+  background-image: url(../images/navigator-icon-heart.png);
+}
+#platform-navigation .icon-list-navigation .icon-assessment:after {
+  background-image: url(../images/navigator-icon-assessment.png);
+}
+#platform-navigation .icon-list-navigation .icon-writing:after {
+  background-image: url(../images/navigator-icon-writing.png);
+}
+#platform-navigation .icon-list-navigation .icon-grammar:after {
+  background-image: url(../images/navigator-icon-grammar.png);
+}
+#platform-navigation .icon-list-navigation .icon-pleasure:after {
+  background-image: url(../images/navigator-icon-pleasure.png);
+}
+#platform-navigation .icon-list-navigation .icon-reading:after {
+  background-image: url(../images/navigator-icon-reading.png);
+}
+#platform-navigation .icon-list-navigation .icon-phonics:after {
+  background-image: url(../images/navigator-icon-phonics.png);
+}
+#platform-navigation .icon-list-navigation .icon-plus:after {
+  background-image: url(../images/navigator-icon-plus.png);
+}
+#platform-navigation .icon-list-navigation .icon-numicon:after {
+  background-image: url(../images/navigator-icon-numicon.png);
+}
+#platform-navigation .icon-list-navigation .icon-maths-makes-sense:after {
+  background-image: url(../images/navigator-icon-maths-makes-sense.png);
+}
+#platform-navigation .icon-list-navigation .icon-road:after {
+  background-image: url(../images/navigator-icon-road.png);
+}
+
+#platform-navigation .icon-list-navigation > li > a:hover:after {
+  background-color: #CE1B6C;
+}
+
+#platform-navigation .icon-list-navigation .icon-heart:after,
+#platform-navigation .icon-list-navigation .icon-assessment:after,
+#platform-navigation .icon-list-navigation .icon-writing:after,
+#platform-navigation .icon-list-navigation .icon-grammar:after,
+#platform-navigation .icon-list-navigation .icon-pleasure:after,
+#platform-navigation .icon-list-navigation .icon-reading:after,
+#platform-navigation .icon-list-navigation .icon-phonics:after,
+#platform-navigation .icon-list-navigation .icon-plus:after,
+#platform-navigation .icon-list-navigation .icon-road:after,
+#platform-navigation .icon-list-navigation .icon-numicon:after,
+#platform-navigation .icon-list-navigation .icon-heart:after {
+  background-position: center -19px;
+}
+#platform-navigation .icon-list-navigation .icon-plus:after {
+  background-position: center -21px;
+}
+#platform-navigation .icon-list-navigation .icon-pleasure:after {
+  background-position: center -20px;
+}
+#platform-navigation .icon-list-navigation .icon-maths-makes-sense:after {
+  background-position: center -18px;
+}
+#platform-navigation .icon-list-navigation .icon-heart:hover:after,
+#platform-navigation .icon-list-navigation .icon-assessment:hover:after,
+#platform-navigation .icon-list-navigation .icon-writing:hover:after,
+#platform-navigation .icon-list-navigation .icon-grammar:hover:after,
+#platform-navigation .icon-list-navigation .icon-pleasure:hover:after,
+#platform-navigation .icon-list-navigation .icon-reading:hover:after,
+#platform-navigation .icon-list-navigation .icon-phonics:hover:after,
+#platform-navigation .icon-list-navigation .icon-plus:hover:after,
+#platform-navigation .icon-list-navigation .icon-road:hover:after,
+#platform-navigation .icon-list-navigation .icon-numicon:hover:after,
+#platform-navigation .icon-list-navigation .icon-maths-makes-sense:hover:after,
+#platform-navigation .icon-list-navigation .icon-heart:hover:after {
+  background-position: center 6px;
+}
+
+
+
+
+body:not(.dashboard-home) #platform-navigation #navigation-first-time-here .six-col {
+  width: 290px;
+}
+body:not(.dashboard-home) #platform-navigation #navigation-first-time-here .six-col + .three-col {
+  width: 230px;
+}
+
+@media (max-width: 1023px) {
+  #platform-navigation #navigation-first-time-here .six-col {
+    width: 290px;
+  }
+  #platform-navigation #navigation-first-time-here .six-col + .three-col {
+    width: 230px;
+  }
+}
+
+#platform-navigation #navigation-school-improvement-pathways h4 {
+  background: #70c2cc;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px;
+}
+#platform-navigation #navigation-school-improvement-pathways .subscribe-button {
+  position: absolute;
+  bottom: 1em;
+}
+
+#platform-navigation .carousel-item {
+  border-radius: 0;
+  height: auto;
+}
+
+#platform-navigation #navigation-pdbp .carousel-container {
+  padding: 0 55px;
+}
+#platform-navigation #navigation-pdbp .carousel-item {
+  width: 200px;
+  margin: 0 5px;
+  float: left;
+  background: transparent;
+  padding: 0;
+}
+@media (min-width: 1024px) {
+  .dashboard-home #platform-navigation #navigation-pdbp .carousel-item {
+    width: 290px;
+  }
+}
+@media (min-width: 1280px) {
+  .dashboard-home #platform-navigation #navigation-pdbp .carousel-item {
+    width: 380px;
+  }
+}
+#platform-navigation #navigation-pdbp .carousel-control,
+#platform-navigation #navigation-pdbp .carousel-control > .mask {
+  background-color: #efeff0;
+}
+#platform-navigation #navigation-pdbp .list-navigation li a,
+#platform-navigation #navigation-tar .list-navigation li a {
+  font-weight: 500;
+  padding-right: 30px;
+}
+#platform-navigation #navigation-pdbp .carousel-item .list-navigation li a:hover,
+#platform-navigation #navigation-tar .carousel-item .list-navigation li a:hover,
+#platform-navigation #navigation-tar .list-navigation li a:hover {
+  background-color: #CE1B6C;
+  color: #fff;
+}
+#platform-navigation #navigation-pdbp .carousel-item .list-navigation li a:hover span {
+  color: #fff;
+}
+#platform-navigation #navigation-pdbp .list-navigation li a > span,
+#platform-navigation #navigation-tar .list-navigation li a > span {
+  color: #989898;
+  display: inline-block;
+}
+#platform-navigation #navigation-pdbp .carousel-item .list-navigation li a .available-resources {
+  color: #63676B;
+}
+#platform-navigation .carousel-item .icon-list-navigation li a:hover:after,
+#platform-navigation #navigation-tar .icon-list-navigation li a:hover:after {
+  background-color: #efeff0;
+}
+#platform-navigation #navigation-pdbp .list-navigation li a:hover:before,
+#platform-navigation .carousel-item .icon-list-navigation li a:hover:before,
+#platform-navigation #navigation-tar .list-navigation li a:hover:before,
+#platform-navigation .carousel-item .icon-list-navigation li a:hover:before {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  content: "";
+  display: block;
+  width: 11px;
+  height: 17px;
+  background-image: url(../images/navigator-icon-arrow-right.png);
+}
+
+
+
+
+
+#platform-navigation #navigation-tar h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+}
+#platform-navigation .list-navigation:first-child {
+  border-top: 0;
+}
+
+#platform-navigation #navigation-tar .list-navigation > li > a {
+  font-weight: normal;
+}
+#platform-navigation #navigation-tar .list-navigation > li > a span {
+  color: #989898;
+}
+#platform-navigation #navigation-tar .list-navigation > li > a .available-resources {
+  color: #63676B;
+}
+#platform-navigation #navigation-tar .list-navigation > li > a:hover span {
+  color: #fff;
+}
+
+
+
+#platform-navigation #navigation-ebooks {
+  position: relative;
+}
+#platform-navigation #navigation-ebooks .ebook-listing {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+#platform-navigation #navigation-ebooks .ebook-listing:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#platform-navigation #navigation-ebooks .ebook-listing .ebook-item {
+  margin: 0 5px;
+  text-align: center;
+}
+#platform-navigation #navigation-ebooks .ebook-listing .ebook-item:first-child {
+  margin-left: 0;
+}
+#platform-navigation #navigation-ebooks .ebook-listing .ebook-item:last-child {
+  margin-right: 0;
+}
+#platform-navigation #navigation-ebooks .ebook-listing .ebook-item a {
+  border: 0;
+}
+#platform-navigation #navigation-ebooks .ebook-listing .ebook-item a:hover {
+  background: transparent;
+}
+#platform-navigation #navigation-ebooks .ebook-listing .ebook-item a  img {
+  border: 0;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+#platform-navigation #navigation-ebooks .button-right {
+  position: absolute;
+  right: 0;
+  margin-top: -6px;
+}
+#platform-navigation #navigation-ebooks .button-right:active {
+  top: auto;
+  left: auto;
+}
+
+
+#platform-navigation #navigation-online-learning .four-col {
+  background: #fff;
+  border-radius: 7px;
+  height: 280px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  margin: 0 10px 0 0;
+  width: 230px;
+  position: relative;
+}
+#platform-navigation #navigation-online-learning .four-col:nth-child(3n) {
+  margin-right: 0;
+}
+#platform-navigation #navigation-online-learning .four-col > h3 {
+  line-height: 1.3em;
+  height: 70px;
+}
+#platform-navigation #navigation-online-learning .four-col > h3 > img {
+  float: left;
+  margin-right: 5px;
+}
+#platform-navigation #navigation-online-learning .four-col .navigation-list {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+#platform-navigation .button {
+  padding-right: 20px;
+}
+
+#platform-navigation #platform-navigator-furniture {
+  position: relative;
+  z-index: 3;
+}
+#platform-navigation .close-button {
+  display: none;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  -webkit-margin-left: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 50%;
+  background: #ce1b6c url(../images/icon-close.png) no-repeat 5px 5px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  width: 19px;
+  height: 19px;
+}
+#platform-navigation .close-button:hover {
+  background-color: #333;
+}
+
+/** Grid overrides */
+#platform-navigation .column {
+  margin: 0 5px;
+}
+#platform-navigation .column:first-child {
+  margin-left: 0;
+}
+#platform-navigation .column:last-child {
+  margin-right: 0;
+}
+
+#platform-navigation .container {
+  width: 710px;
+}
+
+#platform-navigation .one-col {
+  width: 50px;
+}
+#platform-navigation .two-col {
+  width: 110px;
+}
+#platform-navigation .three-col {
+  width: 170px;
+}
+#platform-navigation .four-col {
+  width: 230px;
+}
+#platform-navigation .four-half-col {
+  width: 260px;
+  margin: 0 5px;
+}
+#platform-navigation .four-half-col:nth-child(2n) {
+  margin-right: 0 !important;
+}
+#platform-navigation .four-half-col:nth-child(2n + 1) {
+  margin-left: 0 !important;
+}
+#platform-navigation .five-col {
+  width: 290px;
+}
+
+#platform-navigation .six-col {
+  width: 350px;
+}
+#platform-navigation .nine-col {
+  width: 530px;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-home #platform-navigation .two-col {
+    width: 150px;
+  }
+  .dashboard-home #platform-navigation .three-col {
+    width: 230px;
+  }
+  .dashboard-home #platform-navigation .four-col {
+    width: 310px;
+  }
+  .dashboard-home #platform-navigation .four-half-col {
+    width: 350px;
+  }
+  .dashboard-home #platform-navigation .five-col {
+    width: 390px;
+  }
+  .dashboard-home #platform-navigation .six-col {
+    width: 470px;
+  }
+  .dashboard-home #platform-navigation .nine-col {
+    width: 710px;
+  }
+  .dashboard-home #platform-navigation #navigation-online-learning .four-col {
+    width: 310px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .dashboard-home #platform-navigation .two-col {
+    width: 190px;
+  }
+  .dashboard-home #platform-navigation .three-col {
+    width: 290px;
+  }
+  .dashboard-home #platform-navigation .four-col {
+    width: 390px;
+  }
+  .dashboard-home #platform-navigation .four-half-col {
+    width: 440px;
+  }
+  .dashboard-home #platform-navigation .five-col {
+    width: 490px;
+  }
+  .dashboard-home #platform-navigation .six-col {
+    width: 590px;
+  }
+  .dashboard-home #platform-navigation .nine-col {
+    width: 890px;
+  }
+  .dashboard-home #platform-navigation #navigation-online-learning .four-col {
+    width: 390px;
+  }
+}
+
+
+
+
+
+
+
+
+body:not(.dashboard-home) #platform-navigator {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  overflow: hidden;
+}
+
+body:not(.dashboard-home) #platform-navigator > li {
+  width: 60px;
+  height: 50px;
+  margin: 0 0 10px 0;
+}
+body:not(.dashboard-home) #platform-navigator > li h2 {
+  display: none;
+}
+body:not(.dashboard-home) #platform-navigator > li a {
+  padding: 0;
+}
+
+body:not(.dashboard-home) #platform-navigator a:before {
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+body:not(.dashboard-home) #platform-navigator #navigator-first-time-here a:before {
+  background-image: url(../images/owl-nav-tile-small.png) !important;
+}
+body:not(.dashboard-home) #platform-navigator #navigator-school-improvement-pathways a:before {
+  background-image: url(../images/pathways-nav-tile-small.png) !important;
+}
+body:not(.dashboard-home) #platform-navigator #navigator-pdbp a:before {
+  background-image: url(../images/pdbp-nav-tile-small.png) !important;
+}
+body:not(.dashboard-home) #platform-navigator #navigator-tar a:before {
+  background-image: url(../images/tar-nav-tile-small.png) !important;
+}
+body:not(.dashboard-home) #platform-navigator #navigator-ebooks a:before {
+  background-image: url(../images/ebook-nav-tile-small.png) !important;
+}
+body:not(.dashboard-home) #platform-navigator #navigator-online-learning a:before {
+  background-image: url(../images/online-learning-nav-tile-small.png) !important;
+}
+body:not(.dashboard-home) #platform-navigation-content {
+  display: none; 
+}
+body:not(.dashboard-home).platform-nav-top #platform-navigator > .platform-navigation-item > a:before {
+  background-size: 91px 91px !important
+}
+body:not(.dashboard-home) #platform-navigator > .platform-navigation-item > a:before {
+  background-size: 31px 32px !important;
+}
+
+@media (max-width: 1023px) {
+  body:not(.dashboard-home) #platform-navigator {
+    display: none;
+  }
+}
+
+
+
+#responsive-nav-revealer {
+  width: 74px;
+  height: 37px;
+  -webkit-border-radius: 0 0 37px 37px;
+  -moz-border-radius: 0 0 37px 37px;
+  -ms-border-radius: 0 0 37px 37px;
+  border-radius: 0 0 37px 37px;
+  background: #CE1B6C;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 50%;
+  margin-left: -37px;
+  cursor: pointer;
+}
+#responsive-nav-revealer:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzQgMTguNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzQgMTguNiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cG9seWxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjQuOCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjUuMywzIDE3LjMsMTUgMjkuMywzICIvPg0KPC9zdmc+DQo=);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 34px 19px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -moz-transition: -webkit-transform 0.3s ease;
+  -ms-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+}
+#responsive-nav-revealer.open:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+#platform-navigation > ul > li {
+  display: none;
+}
+
+
+/***** Platform navigator small responsive state / home page additions */
+.dashboard-home #platform-navigator,
+.platform-nav-top #platform-navigator {
+  width: 710px !important;
+}
+@media (min-width: 1024px) {
+  .dashboard-home #platform-navigator {
+    width: 950px !important;
+  }
+}
+@media (min-width: 1280px) {
+  .dashboard-home #platform-navigator {
+    width: 1190px !important;
+  }
+}
+
+.dashboard-home #platform-navigator,
+.platform-nav-top #platform-navigator {
+  list-style-type: none;
+  padding: 0;
+  position: relative !important;
+}
+.dashboard-home #platform-navigator:after,
+.platform-nav-top #platform-navigator:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.dashboard-home #platform-navigator > li,
+.platform-nav-top #platform-navigator > li {
+  height: 200px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dashboard-home #platform-navigator > li:first-child,
+.platform-nav-top #platform-navigator > li:first-child {
+  margin-left: 0;
+}
+.dashboard-home #platform-navigator > li:last-child,
+.platform-nav-top #platform-navigator > li:last-child {
+  margin-right: 0;
+}
+.dashboard-home #platform-navigator > li h2,
+.platform-nav-top #platform-navigator > li h2 {
+  font-size: 14px;
+  line-height: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+}
+@media (min-width: 1024px) {
+  .dashboard-home #platform-navigation .container {
+    width: 950px;
+  }
+}
+@media (min-width: 1280px) {
+  .dashboard-home #platform-navigation .container {
+    width: 1190px;
+  }
+}
+
+.dashboard-home #platform-navigation,
+.platform-nav-top #platform-navigation {
+  width: 100% !important;
+  right: auto;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+.platform-nav-top #platform-navigation {
+  padding: 0 10px;
+  left: -5px;
+}
+.dashboard-home #platform-navigation-content {
+  padding:  0 0 0 10px;
+}
+.platform-nav-top #platform-navigation-content {
+  padding: 0 5px;
+}
+
+.dashboard-home #platform-navigation-indicator,
+.platform-nav-top #platform-navigation-indicator {
+  border-bottom: 8px solid #efeff0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: none;
+  top: -8px;
+  right: auto;
+}
+@media (min-width: 1024px) {
+  .dashboard-home #platform-navigation #navigation-school-improvement-pathways .three-col .subscribe-button {
+    bottom: 55px;
+  }
+  .dashboard-home #platform-navigation #navigation-school-improvement-pathways .five-col .subscribe-button {
+    margin-left: -240px;
+  }
+}
+@media (min-width: 1280px) {
+  .dashboard-home #platform-navigation #navigation-school-improvement-pathways .five-col .subscribe-button {
+    margin-left: -300px;
+  }
+}
+
+.platform-nav-top #platform-navigator .two-col {
+  width: 110px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.platform-nav-top #platform-navigator .platform-navigation-item {
+  height: 110px;
+}
+
+
+.platform-nav-top #platform-navigator {
+  display: block !important;
+  position: absolute !important;
+  top: 0;
+  margin-top: 0;
+}
+
+.platform-nav-top #platform-navigation {
+  top: -470px;
+}
+
+.platform-nav-top #platform-navigator-furniture .close-button[style] {
+  display: none !important;
+}
+main,
+main + div {
+  position: relative;
+}
+
+
+#platform-navigation .video-player .transcript {
+  height: 120px;
+}
+
+
+#platform-navigation-content .tab-container > .tab-navigation-container > .tab-navigation-control {
+  background: #efeff0;
+  border-bottom-color: #efeff0;
+}
+#platform-navigation-content .tab-container > .tab-navigation-container {
+  font-size: 18px;
+}
+
+#platform-navigation-content .fake-poster img {
+  width: 100%;
+  max-width: 100%;
+}

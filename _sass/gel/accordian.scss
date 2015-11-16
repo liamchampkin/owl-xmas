@@ -1,0 +1,93 @@
+/**
+ * =============================================================================
+ * Accordion
+ * =============================================================================
+ *
+ * This file deals with:
+ *  * accordion styling
+ */
+
+.accordion > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-padding-start: 0px;
+	border-top: 1px solid #64686c;
+}
+
+.accordion > ul > li {
+	border-bottom: 1px solid #64686c;
+	margin: 0;
+	padding: 0;
+}
+
+.accordion .accordion-header {
+	padding: 15px 0px;
+	position: relative;
+	cursor: pointer;
+}
+
+.accordion .accordion-header h4 {
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-padding-start: 0px;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+.accordion .accordion-header p {
+	font-size: 18px;
+	font-weight: 300;
+	margin: 0px;
+}
+
+.accordion .accordion-header:after {
+	content: "";
+	display: block;
+
+	position: absolute;
+	top: 50%;
+	right: 0px;
+
+	background: #cf1c6d url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNi4zNzVweCIgaGVpZ2h0PSI5Ljg3NXB4IiB2aWV3Qm94PSIwIDAgNi4zNzUgOS44NzUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYuMzc1IDkuODc1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjAuODgsOS4yMDIgNS4xMjMsNC45NiAwLjg4LDAuNzIgIi8+DQo8L3N2Zz4NCg==") no-repeat center center;
+	background-size: 7px 10px;
+
+	width: 30px;
+	height: 30px;
+
+	margin-top: -18px;
+
+	border-radius: 30px;
+	border: 2px solid #fff;
+	box-shadow: 0 0px 2px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+
+  	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+
+.accordion li.open .accordion-header:after {
+	-webkit-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	-ms-transform:rotate(270deg);
+	transform:rotate(270deg);
+}
+
+.accordion .accordion-content {
+	display: none;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+
+.accordion.expand-all .accordion-content {
+	display: block;
+}

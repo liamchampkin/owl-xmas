@@ -1,0 +1,193 @@
+/* basic scrollbar styling */
+/* vertical scrollbar */
+.mCSB_container{
+  width:auto;
+  margin-right:30px;
+  overflow:hidden;
+}
+.mCSB_container.mCS_no_scrollbar{
+  margin-right:0;
+}
+.mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar{
+  margin-right:30px;
+}
+.mCustomScrollBox>.mCSB_scrollTools{
+  width:30px;
+  height:100%;
+  top:0px;
+  right:0;
+  background: #EFEFF0;
+
+  border-radius: 20px;
+}
+.mCSB_scrollTools .mCSB_draggerContainer{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:auto;
+}
+.mCSB_scrollTools a+.mCSB_draggerContainer{
+  margin: 35px 0;
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+  width:30px;
+  height:100%;
+  margin:0 auto;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+.mCSB_scrollTools .mCSB_dragger{
+  cursor:pointer;
+  width:100%;
+  height:30px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  width:18px;
+  height:100%;
+  margin:0 auto;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  text-align:center;
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown{
+  display:block;
+  position:relative;
+  height:20px;
+  overflow:hidden;
+  margin:0 auto;
+  cursor:pointer;
+}
+.mCSB_scrollTools .mCSB_buttonDown{
+  top:100%;
+  margin-top:-69px;
+}
+/* horizontal scrollbar */
+.mCSB_horizontal>.mCSB_container{
+  height:auto;
+  margin-right:0;
+  margin-bottom:30px;
+  overflow:hidden;
+}
+.mCSB_horizontal>.mCSB_container.mCS_no_scrollbar{
+  margin-bottom:0;
+}
+.mCS_disabled>.mCSB_horizontal>.mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed>.mCSB_horizontal>.mCSB_container.mCS_no_scrollbar{
+  margin-right:0;
+  margin-bottom:30px;
+}
+.mCSB_horizontal.mCustomScrollBox>.mCSB_scrollTools{
+  width:100%;
+  height:16px;
+  top:auto;
+  right:auto;
+  bottom:0;
+  left:0;
+  overflow:hidden;
+}
+.mCSB_horizontal>.mCSB_scrollTools a+.mCSB_draggerContainer{
+  margin:0 20px;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_draggerRail{
+  width:100%;
+  height:2px;
+  margin:7px 0;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_dragger{
+  width:30px;
+  height:100%;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  width:100%;
+  height:4px;
+  margin:6px auto;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonRight{
+  display:block;
+  position:relative;
+  width:20px;
+  height:100%;
+  overflow:hidden;
+  margin:0 auto;
+  cursor:pointer;
+  float:left;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonRight{
+  margin-left:-40px;
+  float:right;
+}
+.mCustomScrollBox{
+  -ms-touch-action:none; /*MSPointer events - direct all pointer events to js*/
+}
+
+/* default scrollbar colors and backgrounds (default theme) */
+
+.mCSB_scrollTools .mCSB_draggerRail{
+  background-color: #EFEFF0;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background:#B1B3B5; /* rgba fallback */
+}
+
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown{
+  border: 0;
+  background-color: #63676b;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+  background-position: 8px 10px;
+  background-repeat: no-repeat;
+}
+.mCSB_scrollTools .mCSB_buttonUp {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQuMzMzcHgiIGhlaWdodD0iOC41cHgiIHZpZXdCb3g9IjAgMCAxNC4zMzMgOC41IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNC4zMzMgOC41IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjEzLjExNyw3LjA2MSA3LjA1NywxIDEsNy4wNjEgIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==);
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQuMzMzcHgiIGhlaWdodD0iOC41cHgiIHZpZXdCb3g9IjAgMCAxNC4zMzMgOC41IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNC4zMzMgOC41IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjAuOTk4LDEuNDM5IDcuMDU5LDcuNSAxMy4xMTUsMS40MzkgIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==);
+}
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover {
+  border: 0;
+  background-color: #CE1B6C;
+}
+.mCSB_scrollTools .mCSB_buttonUp{
+  top: 0px;
+  /*
+  sprites locations are 0 0/-16px 0/-32px 0/-48px 0 (light) and -80px 0/-96px 0/-112px 0/-128px 0 (dark)
+  */
+}
+.mCSB_scrollTools .mCSB_buttonDown{
+  background-position: 8px 10px;
+  margin-top: -60px;
+  /*
+  sprites locations are 0 -20px/-16px -20px/-32px -20px/-48px -20px (light) and -80px -20px/-96px -20px/-112px -20px/-128px -20px (dark)
+  */
+}
+.mCSB_scrollTools .mCSB_buttonLeft{
+  background-position:0 -40px;
+  /*
+  sprites locations are 0 -40px/-20px -40px/-40px -40px/-60px -40px (light) and -80px -40px/-100px -40px/-120px -40px/-140px -40px (dark)
+  */
+}
+.mCSB_scrollTools .mCSB_buttonRight{
+  background-position:0 -56px;
+  /*
+  sprites locations are 0 -56px/-20px -56px/-40px -56px/-60px -56px (light) and -80px -56px/-100px -56px/-120px -56px/-140px -56px (dark)
+  */
+}

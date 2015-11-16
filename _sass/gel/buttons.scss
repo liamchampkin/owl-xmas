@@ -1,0 +1,224 @@
+/**
+ * =============================================================================
+ * Buttons
+ * =============================================================================
+ *
+ * This file deals with:
+ *  * Buttons
+ *  * Contained button
+ */
+
+.button {
+  display: block;
+  vertical-align: middle;
+  border: none;
+  color: #1e1e1e;
+  position: relative;
+  padding-right: 30px;
+}
+.button:hover {
+  background: transparent;
+  color: #1e1e1e;
+}
+a.button,
+input.button {
+  cursor: pointer;
+}
+
+.button-contained {
+  background: #cf1c6d;
+  color: #fff;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid #fff;
+  padding: 0 40px 0 13px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  -webkit-transition: background .3s ease;
+     -moz-transition: background .3s ease;
+      -ms-transition: background .3s ease;
+          transition: background .3s ease;
+  /* medium size button */
+  font-size: 21px;
+  line-height: 33px;
+  border-radius: 17px;
+}
+
+.button-icon-left {
+  padding: 0 13px 0 40px;
+}
+
+.button-no-icon {
+  padding: 0 13px;
+}
+
+.button > .icon {
+  content: " ";
+  display: block;
+  background-color: #cf1c6d;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  border-radius: 14px;
+  border: 2px solid #fff;
+}
+.button:hover > .icon {
+  background-color: #000;
+}
+
+.button-contained:not(.disabled):hover > .icon:not(.icon-tick) {
+  -webkit-animation: icon-fly 0.5s ease;
+  -moz-animation: icon-fly 0.5s ease;
+  -ms-animation: icon-fly 0.5s ease;
+  animation: icon-fly 0.5s ease;
+}
+
+.button-icon-left > .icon {
+  right: auto;
+  left: 5px;
+}
+
+.button-contained > .icon {
+  background-color: transparent;
+  border: 0;
+}
+
+.button-contained.grey {
+  background-color: #63676B;
+}
+
+.button-contained:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.button-contained:active {
+  top: 1px;
+  left: 1px;
+  box-shadow: none;
+}
+
+.button-contained.disabled {
+  background: #63676B;
+  color: #B1B3B5;
+  cursor: not-allowed;
+}
+
+.button-contained.disabled .icon {
+  opacity: 0.5;
+}
+
+.button-smallest {
+  font-size: 14px;
+  line-height: 27px;
+  border-radius: 14px;
+}
+
+.button-small {
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 25px;
+}
+
+.button-large {
+  font-size: 24px;
+  line-height: 39px;
+  border-radius: 19px;
+}
+
+.button-largest {
+  font-size: 30px;
+  line-height: 45px;
+  border-radius: 23px;
+}
+
+
+.button-align-right {
+  float: right;
+}
+
+
+
+
+@-webkit-keyframes icon-fly {
+  0% {
+    right: 5px;
+  }
+  5% {
+    right: -5px;
+  }
+  6% {
+    right: 300px;
+  }
+  20% {
+    right: 300px;
+  }
+  99% {
+    right: 5px;
+  }
+  100% {
+
+  }
+}
+@-moz-keyframes icon-fly {
+  0% {
+    right: 5px;
+  }
+  5% {
+    right: -5px;
+  }
+  6% {
+    right: 300px;
+  }
+  20% {
+    right: 300px;
+  }
+  99% {
+    right: 5px;
+  }
+  100% {
+
+  }
+}
+@-ms-keyframes icon-fly {
+  0% {
+    right: 5px;
+  }
+  5% {
+    right: -5px;
+  }
+  6% {
+    right: 300px;
+  }
+  20% {
+    right: 300px;
+  }
+  99% {
+    right: 5px;
+  }
+  100% {
+
+  }
+}
+@keyframes icon-fly {
+  0% {
+    right: 5px;
+  }
+  5% {
+    right: -5px;
+  }
+  6% {
+    right: 300px;
+  }
+  20% {
+    right: 300px;
+  }
+  99% {
+    right: 5px;
+  }
+  100% {
+
+  }
+}

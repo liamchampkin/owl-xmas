@@ -1,0 +1,38 @@
+@import "gel/typography";
+@import "gel/masthead";
+@import "gel/footer";
+@import "gel/menus";
+@import "gel/cross-product-navigation";
+@import "gel/buttons";
+@import "gel/icons";
+@import "gel/tabs";
+@import "gel/carousel";
+@import "gel/content-blocks";
+// @import "gel/video";
+@import "gel/news-listing";
+@import "gel/pagination";
+@import "gel/scrollbar";
+@import "gel/resource-listing";
+@import "gel/tables";
+// @import "gel/filters";
+@import "gel/accordian";
+@import "gel/lightbox";
+@import "gel/kwiks";
+@import "gel/forms";
+@import "gel/autocomplete";
+@import "gel/faq-list";
+@import "gel/dashboard-tiles";
+@import "gel/platform-navigator";
+
+#masthead-top h1 {
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 10px;
+    text-indent: -9999px;
+    width: 152px;
+}
+
+#masthead-top.for_home h1 {
+    background: rgba(0, 0, 0, 0) url("/images/owl-home-logo.svg?1446561777") no-repeat scroll left top;
+    margin-left: 20px;
+}

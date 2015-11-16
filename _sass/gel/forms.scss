@@ -1,0 +1,114 @@
+/**
+ * =============================================================================
+ * Forms
+ * =============================================================================
+ *
+ * This file deals with:
+ *  * Form style overrides (e.g. where select's are replace with ul's
+ */
+
+.stylised-dropdown-container {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+  border-radius: 7px;
+  border: 1px solid #828689;
+  font-size: 13px;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  width: 100%;
+  background: #fff url("../images/icon-dropdown.png") no-repeat right center;
+}
+
+.stylised-dropdown-container.active {
+  border-radius: 7px 7px 0 0;
+}
+
+.stylised-dropdown-container > h4 {
+  font-size: 13px;
+  margin: 0;
+  margin: 0 0 0 10px !important;
+  border-right: 20px solid transparent;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.stylised-dropdown-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stylised-dropdown-container .stylised-dropdown-options {
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 100;
+  background: #fff;
+  border-radius:  0 0 7px 7px;
+  box-shadow: 1px 1px 1px #828689,
+              1px 1px 2px rgba(130, 134, 137, 0.3),
+              -1px 1px 1px #828689;
+  border-top: 0;
+}
+.stylised-dropdown-container.active .stylised-dropdown-options {
+  display: block;
+}
+
+.stylised-dropdown-container li {
+  margin: 0;
+}
+
+.stylised-dropdown-container .optgroup-title {
+  display: block;
+  padding: 0 10px;
+  margin-right: 5px;
+  border-top: 1px solid #d6d6d6;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHNJREFUeNpiZACC8zK5CSDa8MnkBQxYAFBeAEj1A3EhI5BjABKDyiWia4Iq3g/EIHWNjFDB+UAqAV0TmuILQOzIiGQSiiYg3oCuGGjQB0Y065E1PQBiBWTFIEFGLB5E1oSiGKsGJE0G6IrxAqiHMQBAgAEAaZQyGGR9OL4AAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.stylised-dropdown-container .optgroup-title.open {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGRJREFUeNpiYMACzsvkCgCxAjY5JmyKgdR+EBPINkCXZ8ShGKbwAxA7Gj6ZfAHDBjTFIIUgRWAxZJuYcCh2hGIMTYzYFMOcgE2OCWqCAjb3Atkf0GyKh7nfAFuIoAVzAYgNEGAAlwgygButOX0AAAAASUVORK5CYII=);
+}
+
+.stylised-dropdown-container .optgroup-title:not(.open) + .optgroup-options {
+  display: none;
+}
+
+.stylised-dropdown-container .option {
+  padding: 0 10px;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.stylised-dropdown-container .option.selected {
+  background: #cd006d;
+  color: #fff;
+}
+.stylised-dropdown-container .option:hover {
+  background: #DDDEDF;
+}
+.stylised-dropdown-container .option.selected:hover {
+  background :#cd006d;
+}
+
+.stylised-dropdown-container .option:last-child {
+  border-radius: 0 0 7px 7px;
+}
+.stylised-dropdown-container .optgroup .option:before {
+  content: "-";
+}
+
+input.placeholder {
+  color: #a9a9a9;
+}

@@ -1,0 +1,179 @@
+
+html {
+  overflow-y: scroll;
+}
+body {
+  margin: 0;
+}
+
+.float-left { float: left !important; }
+.float-right { float: right !important; }
+
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+.container:after {
+  content: " ";
+  clear: both;
+  width: 0;
+  height: 0;
+  display: block;
+}
+.column {
+  margin: 0 10px;
+  display: block;
+  float: left;
+  min-height: 1px;
+}
+
+.column img {
+  max-width: 100%;
+}
+
+main, .main {
+  margin: 0 10px;
+}
+
+.column:first-child {
+  margin-left: 0;
+}
+.column:last-child {
+  margin-right: 0;
+}
+
+/* small screens */
+.container {
+  width: 720px;
+}
+main, .main {
+  width: 700px;
+}
+.one-col {
+  width: 40px;
+}
+.two-col {
+  width: 100px;
+}
+.three-col {
+  width: 160px;
+}
+.four-col {
+  width: 220px;
+}
+.five-col {
+  width: 280px;
+}
+.six-col {
+  width: 330px;
+}
+.seven-col {
+  width: 390px;
+}
+.eight-col {
+  width: 460px;
+}
+.nine-col {
+  width: 520px;
+}
+.ten-col {
+  width: 580px;
+}
+.eleven-col {
+  width: 640px;
+}
+.twelve-col {
+  width: 700px;
+}
+
+/* medium screens */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    width: 960px;
+  }
+  main, .main {
+    width: 820px;
+  }
+  .one-col {
+    width: 50px;
+  }
+  .two-col {
+    width: 120px;
+  }
+  .three-col {
+    width: 190px;
+  }
+  .four-col {
+    width: 260px;
+  }
+  .five-col {
+    width: 330px;
+  }
+  .six-col {
+    width: 400px;
+  }
+  .seven-col {
+    width: 470px;
+  }
+  .eight-col {
+    width: 540px;
+  }
+  .nine-col {
+    width: 610px;
+  }
+  .ten-col {
+    width: 680px;
+  }
+  .eleven-col {
+    width: 750px;
+  }
+  .twelve-col {
+    width: 820px;
+  }
+}
+
+/* biggest screens */
+@media (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+  main, .main {
+    width: 1060px;
+  }
+  .one-col {
+    width: 70px;
+  }
+  .two-col {
+    width: 160px;
+  }
+  .three-col {
+    width: 250px;
+  }
+  .four-col {
+    width: 340px;
+  }
+  .five-col {
+    width: 430px;
+  }
+  .six-col {
+    width: 520px;
+  }
+  .seven-col {
+    width: 610px;
+  }
+  .eight-col {
+    width: 700px;
+  }
+  .nine-col {
+    width: 790px;
+  }
+  .ten-col {
+    width: 880px;
+  }
+  .eleven-col {
+    width: 970px;
+  }
+  .twelve-col {
+    width: 1060px;
+  }
+}

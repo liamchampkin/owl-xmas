@@ -1,0 +1,3345 @@
+#main{
+  background: white url(/images/backgrounds/login-main.gif?1) 0 0 no-repeat;
+}
+
+body.reading-site #main{
+  background: white url(/images/backgrounds/reading_header.gif) no-repeat;
+}
+
+body.reading-owl #main{
+  background: white url(/images/backgrounds/reading_header.gif) no-repeat;
+}
+
+body.maths-site #main{
+  background: white url(/images/backgrounds/maths_header.gif) no-repeat;
+}
+
+body.maths-owl #main{
+  background: white url(/images/backgrounds/maths_header.gif) no-repeat;
+}
+
+body,html{
+  padding: 0;
+}
+
+html {
+  height: auto !important;
+ }
+
+body{
+  background: #8bd7fc url('/images/backgrounds/Clouds.png') repeat 0 0;
+  font-family: fs-lola-primary-web, sans-serif;
+  font-size: 16px;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  -webkit-tap-highlight-color: none;
+  outline-color: none !important;
+}
+
+body.gecko{
+  backface-visibility:visible;
+  -moz-backface-visibility:visible;
+}
+
+/* reset gel responsive states */
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+.container, section.container {
+  width: 1024px;
+}
+
+.for-home a {
+  border-bottom: none;
+}
+
+
+.for-home #content a:not(.tip-toggle .lesser-bubble-link):hover, a:active {
+  background-color: transparent;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+a:hover{
+  color: #CE1B6C;
+  background-color: transparent;
+}
+
+:active{
+  outline: none !important;
+}
+
+#main-menu .menu-item.current-menu-item > a:after {
+  border-top: 0px;
+}
+
+hr{
+  margin-right: 33px;
+  clear: left;
+}
+
+/* @group General Styles */
+
+.hide{
+  display: none;
+}
+
+.clear-right{
+  clear: right;
+  display: block;
+  height: -10px;
+}
+
+/* the links on grey area at top and bottom of the page */
+.grey, #bottom-links ul{
+  font-size: 13px;
+  color:  white;
+  background-color: #5A5A5C;
+}
+
+.grey a, #bottom-links a{
+  color:  white;
+}
+
+.box{
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+a.white, a.white:hover{
+  color: white;
+  text-decoration: none;
+}
+
+a.home-link{
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 360px;
+  height: 180px;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+a.home-link:hover,
+a.home-link:active,
+a.home-link:focus {
+  background-color: transparent;
+}
+
+a.button{
+  display: inline-block;
+  background-color: #56568C;
+  padding: 15px 25px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0 0 5px #555;
+}
+
+#bottom-links ul li .divider {
+  background: none;
+  color: #9A9698;
+}
+
+.divider{
+  background: #5A5A5C url('/images/layout/divider.png') no-repeat left top;
+  width: 20px;
+  height: 22px;
+  display: inline-block;
+}
+
+.typekit-badge{
+  display: none !important;
+}
+
+.bottom-right{
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+
+/* @end */
+
+/* @group Main Layout */
+
+/* the main section is the paper above the background*/
+#main{
+  width: 1024px;
+  margin: auto;
+  position: relative;
+  min-height: 0px !important;
+}
+
+#global-masthead {
+  width: 1024px;
+  margin: auto;
+}
+
+#masthead-inner {
+  width: 1024px;
+  margin: auto;
+}
+
+footer#global-footer {
+  display: none;
+}
+
+body.ebook-collection-page footer#global-footer {
+  display: block;
+}
+
+/* @group Header */
+/* the header section is the section at the top of the page that rarely changes */
+
+#header{
+  height: 180px !important;
+  padding: 0px;
+  color: #5A5A5C;
+  position: relative;
+}
+
+body.for-home-page #header{
+  height: 305px !important;
+}
+
+section#top-links {
+  min-height: 0 !important;
+}
+
+#header section#info{
+  width: 635px;
+  position: relative;
+  top:  240px;
+  margin-left: 30px;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: myriad-pro, sans-serif;
+}
+
+body.for-home-page #info a.red-button{
+  position: absolute;
+  right: -243px;
+  top: -94px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  border-bottom: none;
+}
+
+.for-home-page #info a.red-button:hover, .for-home-page #info a.red-button:active {
+  background-color: transparent;
+}
+
+body.for-home-page #info p a img:hover {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.reading-owl.reading-page #side-body a img{
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.reading-owl.reading-page #side-body a img:hover{
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+section#goto-reading, section#goto-maths{
+  width: 133px;
+  height: 61px;
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+section#goto-reading p, section#goto-maths p{
+  margin: 0;
+}
+section#goto-reading img, section#goto-maths img{
+  box-shadow: 6px 6px 10px #555;
+  border-radius: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+section#goto-reading img:hover, section#goto-maths img:hover{
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+#search {
+  background: none repeat scroll 0 0 #E3EBDE;
+  border-radius: 8px 8px 8px 8px;
+  height: 37px !important;
+  min-height: 0 !important;
+  left: 346px;
+  position: absolute;
+  top: 60px;
+  width: 356px;
+}
+
+#search .label.active {
+  background: none repeat scroll 0 0 #E3EBDE;
+  border-radius: 8px 8px 0 0;
+  color: #000000;
+  font-weight: normal;
+  left: 0;
+  padding: 4px 15px;
+  position: absolute;
+  text-shadow: none;
+  top: -25px;
+}
+
+#search .search-website .label {
+  left:0;
+  top: -28px;
+  cursor:pointer;
+  padding-bottom: 10px;
+  font-size: 11px;
+}
+
+#search .search-website .label.active {
+  padding-bottom: 15px;
+}
+
+#search .label + form { display:none; }
+#search .label.active + form { display:block; }
+#search .search-book .label {
+  left: 122px;
+  top: -28px;
+  cursor:pointer;
+  font-size: 11px;
+}
+
+#search .label {
+  background: rgba(250, 250, 250, 0.6);
+  border-radius: 8px 8px 0 0;
+  color: #000000;
+  font-weight: normal;
+  left: 122px;
+  padding: 4px 15px;
+  position: absolute;
+  text-shadow: none;
+  top: -25px;
+  cursor: pointer;
+}
+
+.search-book form {
+  display: none;
+}
+#search .search-website,
+#search .search-book,
+#search .label {
+  background-image: none;
+  cursor: none;
+  height: auto;
+  left: auto;
+  top: auto;
+  width: auto;
+}
+
+#search input.search{
+  line-height: 12px;
+}
+
+.search .search-filters {
+  width: 150px;
+  float: left;
+}
+
+.search .search-filters ul {
+  list-style: none;
+}
+
+.search .search-list .wrap{
+  width: 820px;
+}
+
+.search .search-list .wrap ul{
+  list-style: none;
+}
+
+.search .search-list {
+  padding-left:125px;
+}
+
+.search .search-list .wrap ul li .counter{
+  float: left;
+  padding-right: 6px;
+}
+.search-list ul li .item-title {
+  color:#0088CC;
+  font-weight:bold;
+}
+
+.search-list ul li p {
+  color:#333;
+  font-weight:normal;
+}
+
+.search .search-filters ul li a {
+  color:#333;
+  font-weight:normal;
+  position:relative;
+}
+.search .search-filters ul li a.active:before,
+.search .search-filters ul li a:hover:before {
+  width: 5px;
+  height: 5px;
+  border: solid #f6a412;
+  border-width: 3px 3px 0 0;
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 0;
+  position:absolute;
+  left:-17px;
+  top:5px;
+  content: "";
+}
+
+#search input.search{
+  border: none;
+  background: transparent url('/images/backgrounds/search-input.png') no-repeat left top;
+  height: 31px;
+  width: 295px;
+  color: #666;
+  font-size: 14px;
+  line-height: 14px;
+  padding-left: 10px;
+  padding-top: 2px;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+}
+
+#search #submit-website-search, #search #submit-book-search {
+    background: url("/images/backgrounds/search-submit.png") no-repeat scroll left top transparent;
+    border: 0 none;
+    cursor: pointer;
+    height: 32px;
+    left: 304px;
+    position: absolute;
+    text-indent: -999em;
+    top: 1px;
+    width: 48px;
+}
+
+section#body{
+  float: left;
+  line-height: 24px;
+  padding-top: 22px;
+  margin-bottom: 16px;
+}
+
+section#body h2 {
+  font-size: 31.5;
+}
+
+section#body ul li {
+  margin-bottom: auto;
+}
+
+.maths-owl.top-tips section#body{
+  margin-bottom: -16px;
+}
+
+.reading-owl.top-tips section#body,
+.reading-owl.find-a-book section#body,
+.reading-owl.fun-ideas section#body,
+.reading-owl.at-school section#body,
+.maths-owl.fun-activities section#body,
+.maths-owl.at-school section#body,
+.maths-owl.expert-help section#body{
+  margin-bottom: -42px;
+}
+
+section#full-size-body{
+  float: left;
+  padding-bottom: 50px;
+  line-height: 24px;
+  padding-top: 22px;
+  padding-left: 15px;
+  padding-right: 42px;
+}
+
+section#side-body{
+  float: right;
+  width: 275px;
+  padding: 17px 50px 2px 50px;
+  font-family: fs-lola-primary-web, sans-serif;
+  margin-bottom: 50px;
+}
+
+section#side-body .sidebar-button-spacer {
+    margin-top: 23px;
+}
+
+section#side-body h2{
+  font-size: 29px;
+}
+
+section#float-side-body{
+  font-family: fs-lola-primary-web, sans-serif;
+  float: right;
+  width: 275px;
+  padding: 17px 33px 2px 0;
+  position: relative;
+}
+
+
+section#side-body ul, section#float-side-body ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+section#side-body li, section#float-side-body li{
+  line-height: 16px;
+}
+
+section#body:after, section#side-body:after, section#float-side-body:after{
+  clear: left;
+}
+
+/* @group Main menu */
+
+#main-menu{
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  top: 105px;
+}
+
+#main-menu ul {
+    clear: both;
+    height: 60px;
+    overflow: hidden;
+    width: 1024px;
+    border-bottom: 9px solid blue;
+    margin: 0 0 0 25px;
+    display: block;
+    background: none;
+    border: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    z-index: 2;
+}
+
+#main-menu ul li {
+    display: inline;
+    float: left;
+    margin-left: 3px;
+}
+
+#main-menu ul li.last {
+    margin-left: 0;
+}
+#main-menu ul li a {
+  color: #FFFFFF;
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  height: 66px;
+  letter-spacing: -1px;
+  line-height: 1.5em;
+  margin-top: 22px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 4px 17px 0 17px;
+  text-decoration: underline;
+}
+
+#main-menu ul li a:hover{
+  text-decoration: none;
+  opacity: 1.0;
+  background-image: none;
+  border-radius: 10px;
+  filter: none;
+}
+
+#main-menu ul li ul{
+  display: none;
+}
+
+/* top-tips red */
+#main-menu ul.top-tips-for-reading{
+  border-bottom: 9px solid #DE372C;
+}
+#main-menu ul li.top-tips-for-reading a{
+  background-color: #DE372C;
+}
+body.top-tips-for-reading h1, body.top-tips-for-reading h2{
+  color: #DE372C;
+}
+body.top-tips-for-reading .page-bg{
+  background-color: #DE372C;
+}
+body.top-tips-for-reading .page-fg{
+  color: #DE372C;
+}
+body.top-tips-for-reading section.tip a.tip-toggle{
+  background-color: #DE372C;
+}
+#main-menu ul.top-tips{
+  border-bottom: 9px solid #DE372C;
+}
+#main-menu ul li.top-tips a{
+  background-color: #DE372C;
+}
+body.top-tips h1{
+  color: #DE372C;
+  padding-bottom: 10px;
+}
+body.top-tips h2{
+  color: #DE372C;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+body.top-tips .page-bg{
+  background-color: #DE372C;
+}
+body.top-tips .page-fg{
+  color: #DE372C;
+}
+body.top-tips section.tip a.tip-toggle{
+  background-color: #DE372C;
+}
+body.top-tips #side-body .bubble-link{
+  background: url("/images/buttons/sidebar/red.png");
+}
+body.top-tips .print-button{
+  background: transparent url(/images/buttons/print/red.png) no-repeat;
+}
+/* fun-ideas purple */
+#main-menu ul.fun-ideas{
+  border-bottom: 9px solid #B468A7;
+}
+#main-menu ul li.fun-ideas a{
+  background-color: #B468A7;
+}
+body.fun-ideas h1, body.fun-ideas h2{
+  color: #B468A7;
+}
+body.fun-ideas .page-bg{
+  background-color: #B468A7;
+}
+body.fun-ideas .page-fg{
+  color: #B468A7;
+}
+body.fun-ideas section.tip a.tip-toggle{
+  background-color: #B468A7;
+}
+body.fun-ideas #side-body .bubble-link{
+  background: url("/images/buttons/sidebar/lilac.png");
+}
+body.fun-ideas .print-button{
+  background: transparent url(/images/buttons/print/lilac.png) no-repeat;
+}
+/* fun-activities */
+#main-menu ul.fun-activities{
+  border-bottom: 9px solid #B468A7;
+}
+#main-menu ul li.fun-activities a{
+  background-color: #B468A7;
+}
+body.fun-activities h1, body.fun-activities h2{
+  color: #B468A7;
+}
+body.fun-activities .page-bg{
+  background-color: #B468A7;
+}
+body.fun-activities .page-fg{
+  color: #B468A7;
+}
+body.fun-activities section.tip a.tip-toggle{
+  background-color: #B468A7;
+}
+body.fun-activities #side-body .bubble-link{
+  background: url("/images/buttons/sidebar/lilac.png");
+}
+body.fun-activities .print-button{
+  background: transparent url(/images/buttons/print/lilac.png) no-repeat;
+}
+/* find-a-book */
+#main-menu ul.find-a-book{
+  border-bottom: 9px solid #F6A412;
+}
+#main-menu ul li.find-a-book a{
+  background-color: #F6A412;
+  color: #393939;
+}
+body.find-a-book h1, body.find-a-book h2{
+  color: #F6A412;
+}
+body.find-a-book .page-bg{
+  background-color: #F6A412;
+}
+body.find-a-book .page-fg{
+  color: #F6A412;
+}
+body.find-a-book section.tip a.tip-toggle{
+  background-color: #F6A412;
+}
+body.find-a-book #side-body .bubble-link{
+  background: url("/images/buttons/sidebar/orange.png");
+  color: #393939;
+  box-shadow: 10px 11px 10px #ccc;
+}
+body.find-a-book .print-button{
+  color: #393939;
+  background: transparent url(/images/buttons/print/orange.png) no-repeat;
+}
+.reading-owl.find-a-book-page section#side-body .sidebar-button-spacer{
+  margin-top: 0px;
+}
+/* at-school */
+#main-menu ul.at-school{
+  border-bottom: 9px solid #59A831;
+}
+#main-menu ul li.at-school a{
+  background-color: #59A831;
+}
+body.at-school h1, body.at-school h2{
+  color: #59A831;
+}
+body.at-school .page-bg{
+  background-color: #59A831;
+}
+body.at-school .page-fg{
+  color: #59A831;
+}
+body.at-school section.tip a.tip-toggle{
+  background-color: #59A831;
+}
+body.at-school #side-body .bubble-link{
+  background: url("/images/buttons/sidebar/green.png");
+}
+body.at-school .print-button{
+  background: transparent url(/images/buttons/print/green.png) no-repeat;
+}
+.reading-owl.find-a-book-page a.image-link img{
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.reading-owl.find-a-book-page a.image-link img:hover{
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+/* maths-site */
+#main-menu ul.reading, #main-menu ul.maths{
+  border-bottom: 9px solid #308BD0;
+}
+#main-menu ul li.reading a, #main-menu ul li.maths a{
+  background-color: #308BD0;
+}
+body.reading h1, body.reading h2, body.maths h1, body.maths h2{
+  color: #308BD0;
+}
+
+body.reading-owl .menu-item h2, body.maths-owl .menu-item h2 {
+  color: #fff;
+}
+
+body.reading-owl #content a {
+  color: #08c;
+}
+
+body.reading-owl #content a:hover {
+  color: #cf1c6d;
+}
+
+body.reading-owl #content a.bubble-link, body.reading-owl #content a.print-button {
+  color: #fff;
+}
+
+body.reading-owl #content a.print-button:hover {
+  text-decoration: none;
+}
+
+section.tip {
+  margin: auto;
+}
+
+section#content h1 {
+  font-size: 38.5px;
+  margin: 0px;
+}
+
+body.reading .page-bg, body.maths .page-bg{
+  background-color: #308BD0;
+}
+body.reading .page-fg, body.maths .page-fg{
+  color: #308BD0;
+}
+body.reading section.tip a.tip-toggle, body.maths section.tip a.tip-toggle{
+  background-color: #308BD0;
+}
+body.reading .print-button{
+  background: transparent url(/images/buttons/print/blue.png) no-repeat;
+}
+/* expert-help */
+#main-menu ul.expert-help{
+  border-bottom: 9px solid #7D6BB2;
+}
+#main-menu ul li.expert-help a{
+  background-color: #7D6BB2;
+}
+body.expert-help h1, body.expert-help h2{
+  color: #7D6BB2;
+}
+body.expert-help .page-bg{
+  background-color: #7D6BB2;
+}
+body.expert-help .page-fg{
+  color: #7D6BB2;
+}
+body.expert-help section.tip a.tip-toggle{
+  background-color: #7D6BB2;
+}
+body.expert-help #side-body .bubble-link{
+  background: url("/images/buttons/sidebar/purple.png");
+}
+body.expert-help .print-button{
+  background: transparent url(/images/buttons/print/purple.png) no-repeat;
+}
+/* kids-barn */
+#main-menu ul.kids-barn{
+  border-bottom: 9px solid #DABA6B;
+}
+#main-menu ul li.kids-barn a{
+  background: transparent url('/images/navigation/KidsBarn.png') no-repeat left top;
+  color: transparent;
+  margin-top: 18px;
+}
+#main-menu ul li.kids-barn a:hover{
+  margin-top: 10px;
+}
+body.kids-barn h1, body.kids-barn h2{
+  color: #DABA6B;
+}
+body.kids-barn .page-bg{
+  background-color: #DABA6B;
+}
+body.kids-barn .page-fg{
+  color: #DABA6B;
+}
+body.kids-barn section.tip a.tip-toggle{
+  background-color: #DABA6B;
+}
+
+/* treasure-chest */
+
+#main-menu ul.treasure-chest{
+  border-bottom: 9px solid #DABA6B;
+}
+.maths-games-page #main-menu ul.treasure-chest,
+.cooking-with-owl-page #main-menu ul.treasure-chest,
+.fun-downloads-page #main-menu ul.treasure-chest{
+  border-bottom: 9px solid #DABA6B;
+}
+.treasure-chest.maths-games-page #hero,
+.treasure-chest.cooking-with-owl-page #hero,
+.treasure-chest.fun-downloads-page #hero{
+  height: 286px;
+}
+.maths-games-page #content,
+.cooking-with-owl-page #content,
+.fun-downloads-page #content,
+.maths-owl.colour-in-page #content,
+.maths-owl.wallpapers-page #content{
+  padding: 22px 0 50px 26px;
+}
+
+#main-menu ul li.treasure-chest a{
+  background: transparent url('/images/navigation/KidsTreasureChest.png') no-repeat left top;
+  color: transparent;
+  width: 253px;
+  margin-top: 18px;
+}
+#main-menu ul li.treasure-chest a:hover{
+  margin-top: 10px;
+}
+body.treasure-chest h1, body.treasure-chest h2{
+  color: #DABA6B;
+}
+body.treasure-chest .page-bg{
+  background-color: #DABA6B;
+}
+body.treasure-chest .page-fg{
+  color: #DABA6B;
+}
+body.treasure-chest section.tip a.tip-toggle{
+  background-color: #DABA6B;
+}
+#main-menu ul li.selected a, #main-menu ul li a:hover {
+    margin-top: 16px;
+}
+#main-menu ul li a:focus {
+    margin-top: 12px;
+}
+.treasure-chest.maths-games-page .maths-pod{
+  padding: 0 20px 20px 0;
+  width: 290px;
+  height: 150px;
+}
+.treasure-chest.fun-downloads-page .maths-pod{
+  padding: 0 20px 20px 0;
+  width: 290px;
+  height: 150px;
+}
+.treasure-chest.cooking-with-owl-page .maths-pod{
+  padding: 0 20px 20px 0;
+  width: 187px;
+  height: 150px;
+}
+.treasure-chest.cooking-with-owl-page .maths-pod:last-of-type{
+  padding: 90px 0 0 82px;
+  height: 80px;
+}
+.maths-owl.colour-in-page #hero{
+  height: 325px;
+}
+/* help-and-terms */
+#main-menu ul.help-and-terms{
+  border-bottom: 9px solid #7D6BB2;
+}
+#main-menu ul li.help-and-terms a{
+  background-color: #7D6BB2;
+}
+body.help-and-terms #content h1, body.help-and-terms #content h2{
+  color: #7D6BB2;
+}
+body.help-and-terms .page-bg{
+  background-color: #7D6BB2;
+}
+body.help-and-terms .page-fg{
+  color: #7D6BB2;
+}
+body.help-and-terms section.tip a.tip-toggle{
+  background-color: #7D6BB2;
+}
+body.help-and-terms #side-body .bubble-link{
+  background: url("/images/buttons/sidebar/purple.png");
+}
+body.help-and-terms .print-button{
+  background: transparent url(/images/buttons/print/purple.png) no-repeat;
+}
+/* @end */
+
+/* @end */
+
+/* the content section is the main area that changes with each page */
+#content{
+  margin-top: 0px;
+  font-family: myriad-pro, sans-serif;
+  position: relative;
+}
+
+body.for-home-page #content {
+  margin-top: 50px;
+}
+
+#content h1{
+  font-family: fs-lola-primary-web,sans-serif;
+}
+.welcome-layout-with-side-body #content h1{
+  font-family: myriad-pro, sans-serif;
+  color: #5A5A5C;
+}
+.welcome-layout-with-side-body #content p{
+  font-family: myriad-pro, sans-serif;
+  color: #5A5A5C;
+  font-size: 24px;
+  line-height: 29px;
+}
+.welcome-layout-with-side-body #side-body p{
+  font-size: 19px;
+  line-height: 28px;
+}
+
+
+#content:after{
+  clear: left;
+}
+
+.search-results-page #wide-body p:first-child{
+  padding: 0px;
+}
+
+.search-results-page #content{
+  min-height: 200px;
+}
+
+#wide-body p:first-child{
+  padding: 28px 0 0 58px;
+  font-size: 18px;
+}
+
+#content .padded{
+  padding: 0 33px;
+}
+.unpadded{
+  padding: 0 0 50px 0 !important;
+  width: 1024px !important;
+}
+
+#content p.info{
+  font-size: 18px;
+  margin-bottom: 19px;
+}
+
+/* @group tips */
+
+section.tip a.tip-toggle{
+  display: block;
+  margin-top: 7px;
+  float: left;
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+  background-image: url('/images/buttons/tip-opened.png?1');
+  background-repeat: no-repeat;
+  border: 0 !important;
+  border-color: none;
+}
+
+section.tip h3{
+  margin-left: 42px;
+  font-size: 20px;
+}
+section.tip p{
+  margin-left: 42px;
+}
+section.tip ul, section.tip ol{
+  margin-left: 70px;
+}
+section.tip a.closed{
+  background-image: url('/images/buttons/tip-closed.png?1');
+}
+
+/* @end */
+
+section.key-issue-container{
+  background: url("/images/backgrounds/QuestionPhonicsBgBox.jpg") no-repeat scroll left top #FFFFFF;
+  height: 108px !important;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  width: 501px;
+}
+section.key-issue-container-inner{
+  position: relative;
+}
+section.key-issue-container img{
+  right: 10px;
+  position: absolute;
+  bottom: 5px;
+}
+
+section.key-issue-container p {
+  padding: 0px 5px 5px 5px;
+  margin: 0px;
+  font-size: 14px;
+}
+
+section.key-issue-container h2{
+  font-size: 18px !important;
+  line-height: 22px;
+  width: 360px;
+  margin: 0 0 10px 5px;
+}
+
+section.key-issue-container a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+section#say-the-sounds{
+  background: transparent url("/images/backgrounds/QuestionPhonicsBgBoxLarge.jpg") no-repeat scroll left top;
+  height: 160px !important;
+}
+
+section#say-the-sounds a{
+  float: left;
+  height: 37px;
+  margin-right: 15px;
+  padding-top: 8px;
+  width: 52px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+section#say-the-sounds .ws{
+  width: 152px;
+}
+
+
+section.pods:after{
+  clear: left;
+}
+section.pod{
+  float: left;
+  height: 230px !important;
+  padding: 30px 80px 0 35px;
+  width: 223px;
+  position: relative;
+  margin: auto;
+  margin-bottom: -18px !important;
+  background-repeat: no-repeat;
+}
+
+section.pod h2{
+  color: #7E2C18;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: normal;
+  width: 170px;
+  margin-bottom: 12px;
+}
+
+section.pod p{
+  width: 170px;
+  margin: 0px;
+}
+
+
+body.reading-owl #content section.pod a, section.pod a:hover{
+  position: absolute;
+  top: 192px;
+  text-align: center;
+  left: 27px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  width: 180px;
+  font-family: fs-lola-primary-web, sans-serif;
+  font-weight: bold;
+}
+
+.pod-container {
+    background: url("/images/backgrounds/bg-pod.gif") no-repeat scroll left top transparent;
+    height: 188px;
+    margin-right: 16px;
+    margin-bottom: 38px;
+    padding: 2px 2px 8px 5px;
+    text-align: left;
+    width: 198px;
+    float: left;
+}
+
+.pod-container.owl img.lightbox-img{
+  width:193px;
+}
+.pod-container.maths-wallpaper img.lightbox-img{
+  width:193px;
+}
+.pod-container.owl p{
+  margin-top: 10px !important;
+}
+
+.pod-container-with-owls{
+  position: relative;
+  float: left;
+  color: transparent;
+  margin-bottom: 10px;
+}
+.pod-container-with-owls .pod-container{
+  margin-bottom: 76px;
+}
+
+.pod-container-with-owls .pod-container img.lightbox-img{
+  border: 1px solid #EFEFEF;
+  display: block;
+  margin: 5px auto;
+}
+
+.owls{
+  position: absolute;
+  top: 214px;
+  left: 13px;
+  width: 83px;
+  height: 30px;
+  color: transparent;
+}
+
+.owls-info{
+ position: absolute;
+  top: 214px;
+  left: 130px;
+  width: 335px;
+  height: 30px;
+  color: transparent;
+  background-image: url(/images/info/owls/difficulty-rating-bar.gif)
+}
+
+.pod-container-with-owls .owls{
+  left: 116px;
+}
+
+.owls1_2{
+  background: white url(/images/info/owls/1owl2.gif)
+}
+.owls2_2{
+  background: white url(/images/info/owls/2owl2.gif)
+}
+.owls1{
+  background: white url(/images/info/owls/1owl.gif)
+}
+.owls2{
+  background: white url(/images/info/owls/2owl.gif)
+}
+.owls3{
+  background: white url(/images/info/owls/3owl.gif)
+}
+.owls1-junior{
+  background: white url(/images/info/owls/1owl-junior.gif)
+}
+.owls2-junior{
+  background: white url(/images/info/owls/2owl-junior.gif)
+}
+.owls3-junior{
+  background: white url(/images/info/owls/3owl-junior.gif)
+}
+.pod-container p{
+  margin-top: 0px !important;
+}
+
+.pods .pod-container{
+  margin-right: 11px;
+}
+
+.pod-container.dress-oxford-owl{
+  position: relative;
+}
+.pod-container:last{
+  margin-right: 0;
+}
+
+.pod-container.dress-oxford-owl h3{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 30px;
+  line-height: 26px;
+  font-size: 20px;
+}
+
+.pod-container.dress-oxford-owl a, .pod-container.dress-oxford-owl a:hover{
+  position: absolute;
+  top: 153px;
+  left: 36px;
+  font-size: 20px;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.pod-container .pod-content-title {
+     color: #000000;
+    float: left;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+.pod-container img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pod-container .icon {
+    float: left;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.game-pod, .game-pod a{
+  display: block;
+  width: 492px;
+  height: 248px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#content .meet-the-team{
+  float: left;
+  width: 300px;
+}
+#content .meet-the-team h3{
+  padding-left: 10px;
+}
+#content .meet-the-team p{
+  padding: 0 10px 40px 10px;
+}
+
+#hero{
+  width: 1024px;
+  height: 266px;
+  position: relative;
+  left: -33px;
+  top: -16px;
+}
+
+img#barn-map{
+  width: 1024px;
+  height: 266px;
+}
+
+/* @group Footer */
+/* the footer section is the section at the bottom of the page that rarely changes */
+#footer{
+  height: 180px !important;
+  padding: 0px 33px 0 33px;
+  width: 950px;
+  left:auto;
+  bottom:0;
+  clear: both;
+  position: relative;
+}
+
+.welcome-page #footer,
+.for-school-page #footer,
+.ebook-collection-page #footer{
+  height: 120px;
+}
+
+#footer #newsletter{
+  background-color: #B8DEF7;
+  font-size: 11px;
+  color: #444;
+  height: 28px;
+  padding: 7px 2px 2px 10px;
+  border-radius: 10px;
+  width: 690px;
+  position: relative;
+  top: 46px;
+  margin-bottom: 16px;
+}
+
+#footer #newsletter p{
+  float: left;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+#footer #newsletter input{
+  float: left;
+  border: none;
+  background: #B8DEF7 url('/images/backgrounds/newsletter-input.png') no-repeat left top;
+  height: 31px;
+  width: 210px;
+  color: #666;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 10px;
+  padding-top: 0;
+  margin-left: 1px;
+  position: relative;
+  top: -4px;
+}
+
+body.ipad #footer #newsletter input{
+  height: 30px;
+}
+
+#footer #newsletter img{
+  margin-left: 0px;
+  margin-top: -3px;
+  vertical-align: top;
+}
+
+#footer .facebook{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url('/images/footer/facebook.png');
+  position: relative;
+  top: 43px;
+  left: -1px;
+}
+
+#footer .addthis_toolbox{
+  clear: both;
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  width: 200px;
+}
+
+#footer .owl, #footer .oup-logo{
+  position: absolute;
+  margin-top: 47px;
+  right: 5px;
+  width: 230px;
+  height: 132px !important;
+  background-repeat: no-repeat;
+  background-image: url('/images/footer/owl.png');
+}
+#footer .oup-logo{
+  height: 50px;
+  width: 120px;
+  right: 33px;
+  background: url('/images/footer/oup_logo.png') no-repeat;
+}
+
+/* @end */
+
+#bottom-links{
+  position: relative;
+  height: 36px !important;
+  min-height: 36px !important;
+  line-height: 36px;
+  font-size: 13px;
+  text-align: center;
+  width: 1024px;
+  color:  white;
+}
+
+#bottom-links ul{
+  list-style-type:none;
+  height: 36px;
+  margin:0;
+  padding:0;
+}
+
+#bottom-links li{
+  display:inline;
+}
+
+/* @end */
+
+
+/* @group Buttons */
+
+body.for-home .buttons .image-link:first-child{
+  margin: 0 43px 0 25px;
+}
+
+body.for-home .buttons a.image-link {
+  border-bottom: none;
+}
+
+body.for-home .buttons a.image-link:hover, body.for-home .buttons a.image-link:active {
+  background-color: transparent;
+}
+
+body.for-home section.buttons {
+  margin-bottom: 5px;
+}
+
+body.for-home .buttons .image-link img{
+  box-shadow: 10px 10px 10px #ccc;
+  border-radius: 20px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+body.for-home .buttons .image-link img:hover{
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.print-buttons{
+  display: block;
+  position: relative;
+  bottom: 10px;
+  width: 220px;
+  margin: auto;
+}
+.print-buttons a{
+  background-color: #0391e6;
+  padding: 2px 25px 5px 25px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.print-button{
+  color: white;
+  padding: 9px 11px 12px 20px;
+  border-radius: 25px;
+  width: 85px;
+  display: block;
+  font-family: fs-lola-primary-web, sans-serif;
+  font-size: 19px;font-weight: bold;
+  line-height: 20px;
+  box-shadow: 5px 5px 10px #bbb;
+}
+
+
+/* @group Behaviour */
+
+/* bubble buttons*/
+
+.bubble-link{
+  display: block;
+  background: transparent url('/images/buttons/sidebar/bubble.png') repeat-y;
+  width: 276px;
+  text-align: center;
+  padding: 14px 0;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 22px;
+  border-radius: 18px;
+  box-shadow: 10px 11px 10px #ccc;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  margin-bottom: 16px;
+}
+.bubble-link:hover{
+  color: white;
+  text-decoration: none;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+a.lesser-bubble-link{
+  display: block;
+  border-radius: 5px;
+  width: 176px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  color: #fff !important;
+  font-size: 18px;
+}
+
+body.find-a-book-page #content a.bubble-link {
+  color: #000;
+}
+/* @end */
+/* @end */
+
+/* @group Dropdowns */
+div.dropdown > a{
+  display: block;
+  width: 330px;
+  margin: 0 0 12px 12px;
+  height:  27px;
+  border-radius: 14px;
+  padding: 11px 0 4px 20px;
+  box-shadow: 0 0 15px #888;
+  background-color: #f9a400;
+  background: #f9a400 url('/images/dropdown/caret.png') no-repeat 306px 13px;
+}
+.ebook-collection div.dropdown > a{
+  background: #d3d3d3 url('/images/dropdown/caret.png') no-repeat 300px 13px;
+  width: 330px;
+  box-shadow: none;
+  margin: 0 0 12px 0;
+}
+div.dropdown a{
+  color: #393939;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: fs-lola-primary-web, sans-serif;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+div.dropdown a:hover{
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+body.find-a-book div.dropdown a {
+  color: #333 !important;
+}
+
+body.find-a-book div.dropdown a:hover {
+  background-color: #f9a400;
+}
+
+body.ipad div.dropdown a:hover{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+body.iphone div.dropdown a:hover{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+div.dropdown.span4{
+  width: 360px;
+  float: left;
+  position: relative;
+}
+ul.dropdown-menu{
+  width: 350px;
+  left: 10px;
+  top: 36px;
+  border-radius: 14px;
+}
+ul.dropdown-menu.profile-menu{
+  width: auto;
+  border-radius: none;
+}
+#global-masthead a {
+  text-decoration: none;
+}
+
+/* @end */
+
+section.lib-signin{
+  position: absolute;
+  right: 34px;
+  top: 235px;
+  width: 100px;
+  display: none;
+}
+
+section.lib-signin a{
+  font-size: 22px;
+  color: #FAA21B;
+  text-decoration: underline;
+  display: block;
+  height: 35px;
+}
+
+.butterfly-1{
+  width: 110px;
+  background: transparent url('/images/backgrounds/butterfly_1.png') no-repeat right;
+}
+
+.butterfly-2{
+  width: 90px;
+  background: transparent url('/images/backgrounds/butterfly_2.png') no-repeat right;
+}
+
+/* @group FormLibrary */
+
+section#FormLibrary{
+  height: 220px !important;
+}
+
+section#FormLibrary .container {
+  margin-left: 45px;
+}
+
+section#FormLibrary ul.dropdown-menu {
+  display: none;
+  width: 330px;
+  position: absolute;
+  border: 1px solid #aaa;
+  top: 26px;
+  left: 10px;
+  z-index: 50;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px 0 #dbdbdb;
+  margin: 0px;
+}
+
+.ebook-library section#FormLibrary ul.dropdown-menu{
+  background-color: #d3d3d3;
+}
+
+section#FormLibrary ul.dropdown-menu li {
+  margin: 2px;
+  list-style-type: none;
+}
+
+section#FormLibrary ul.dropdown-menu li a {
+  color: #000;
+  display: inline-block;
+  width: 310px;
+  padding: 5px;
+}
+
+section#FormLibrary ul.dropdown-menu li a:hover {
+  color: #fff !important;
+  background-color: #08c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ebook-collection section#FormLibrary{
+  height: 208px !important;
+}
+
+.view-select{
+  position: absolute;
+  right: 9px;
+  top: 15px;
+}
+.ebook-collection .view-select{
+  top: 86px;
+  right: 28px;
+}
+.ebook-collection #wide-body h2{
+  color: #59595C;
+  font-weight: bold;
+  font-family: fs-lola-primary-web, sans-serif;
+  font-size: 18pt;
+  margin-bottom: 2px;
+  margin-left: 7px;
+}
+.ebook-collection #wide-body p{
+  width: 642px;
+  color: #59595C;
+  font-size: 19px;
+  line-height: 28px;
+  margin-left: 7px;
+}
+.ebook-collection #FormLibrary{
+  padding-top: 30px;
+  margin-left: 17px;
+}
+
+.ebook-collection #FormLibrary div.dropdown.span4{
+  width: 382px;
+}
+
+.view-select .default-view{
+  display: inline-block;
+  width: 117px;
+  height: 39px;
+  background: transparent url(/images/buttons/library-covers.png?1) 0 39px;
+}
+.view-select .default-view.active{
+  background: transparent url(/images/buttons/library-covers.png?1);
+}
+
+.view-select .detail-view{
+  display: inline-block;
+  width: 117px;
+  height: 39px;
+  background: transparent url(/images/buttons/library-detail.png) 0 39px;
+}
+.view-select .detail-view.active{
+  background: transparent url(/images/buttons/library-detail.png);
+}
+.search-ebook{
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+.search-ebook .label{
+  color: #6C6C6F;
+  background: transparent;
+  font-family: fs-lola-primary-web, sans-serif;
+  font-size: 17pt;
+  margin-bottom: 2px;
+  font-weight: bold;
+  margin-left: -6px;
+}
+.search-ebook input{
+  border-radius: 15px;
+  border: 2px solid #C1C1C1;
+  padding: 5px 0 5px 35px;
+  background: url(/images/backgrounds/loupe.png) no-repeat 10px 2px;
+  margin-top: 7px;
+}
+.search-ebook input#submit-ebook-search{
+  display: none;
+}
+
+
+/* @end */
+
+/* @group Bookshelf */
+
+ul.bookshelf{
+  background: url(/images/backgrounds/bookshelf.png) no-repeat scroll left bottom transparent;
+  height: 158px;
+  margin: 20px -15px;
+  position: relative;
+  text-align: center;
+  width: 1002px;
+  position: relative;
+}
+
+.ebook-library ul.bookshelf{
+  background: none;
+  border-bottom: 2px solid #BDBDBE;
+  width: 940px;
+  margin: 20px 0;
+}
+
+.ebook-library ul.bookshelf li{
+  margin: 0px 0px 0px 22px;
+}
+
+.ebook-library ul.bookshelf li:first-child{
+  margin-left: 0px;
+}
+
+ul.bookshelf li{
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  border: 0px solid green;
+  height: 135px;
+  width: 135px;
+  margin: -40px 0px 0px 22px;
+  float: left;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(200,0,0,0);
+}
+
+ul.bookshelf .is-ebook{
+  width: 54px;
+  height: 54px;
+  background: transparent url('/images/books/isEbook.png') no-repeat left top;
+  position: absolute;
+  bottom: -13px;
+  right: -10px;
+}
+.ebook-library ul.bookshelf .is-ebook{
+  background: transparent url('/images/books/isEbook-teal.png?1') no-repeat left top;
+  bottom: -21px;
+  right: -20px;
+}
+table.booktable{
+  margin: 0px 10px 33px 10px;
+  width:962px;
+  table-layout: fixed;
+  position: relative;
+}
+
+table.booktable, table.booktable tr, table.booktable th, table.booktable td {
+  border: 0px;
+}
+
+body.reading-owl #content table.booktable a.btn-booktable {
+  color: #000;
+}
+
+table.booktable th.th-image-book,
+table.booktable th.th-title,
+table.booktable th.th-author,
+table.booktable th.th-series {
+  background: #F8A326;
+}
+table.booktable th.th-image-book {
+  width: 115px;
+  border-radius: 24px 0 0 0;
+  padding-left: 15px;
+}
+table.booktable th.th-title {
+  width:135px;
+}
+table.booktable th.th-author {
+  width: 140px;
+}
+table.booktable th.th-series {
+  width:180px;
+  border-radius: 0 24px 0 0;
+}
+table.booktable th.th-empty{
+  width: 126px;
+  background-color: transparent;
+}
+table.booktable th{
+  color: #393939;
+  font: bold 22px/1em 'fs-lola-primary-web', sans-serif;
+  border-bottom: 7px solid transparent;
+  padding: 7px 0 3px;
+  vertical-align:bottom;
+}
+.booktable thead tr:after {
+content: "";
+width: 100%;
+height: 7px;
+background: #F8A326;
+position: absolute;
+left: 0;
+border-radius: 0 5px 5px 0;
+top: 54px;
+}
+.ebook-collection-page .booktable thead tr:after {
+  background: #DEDEDE;
+}
+
+
+table.booktable td, table.booktable th{
+ text-align: left;
+}
+table.booktable tbody td{
+  vertical-align: top;
+  padding: 10px 20px 12px 0;
+  border-bottom:2px solid #F8A326;
+}
+table.booktable tbody td a {
+  color:#333;
+}
+
+table.booktable tbody td .btn-booktable {
+  background:#fff;
+  border:2px solid #F8A326;
+  display:inline-block;
+  padding: 4px 10px;
+  max-width:90px;
+  border-radius: 14px;
+  margin-bottom: 80px;
+  font-size: 14px;
+  box-shadow: 2px 2px 5px #888;
+}
+/* @end */
+
+/* @group Carousel */
+
+.outer-carousel{
+  width: 960px;
+  height: 247px !important;
+  margin-left: 0px;
+  background: url('/images/carousel/bg/bg.png?4') no-repeat left top;
+  clear: both;
+  margin-bottom: 80px;
+}
+
+.outer-carousel a {
+  border-bottom: none;
+}
+
+.carousel-header{
+  color: white;
+  position: absolute;
+  padding: 6px 0 0 10px;
+  font-family: fs-lola-primary-web, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.carousel{
+  width: 940px;
+  height: 200px;
+  position: relative;
+  top: 33px;
+  left: 6px;
+}
+.carousel .left-button{
+  width: 34px;
+  height: 58px;
+  display: block;
+  position: absolute;
+  left: -6px;
+  top: 74px;
+  background: transparent url('/images/carousel/bg/left.png?3') no-repeat left top;
+}
+.carousel .left-button:hover{
+  opacity: 1.0;
+}
+.carousel .right-button{
+  width: 38px;
+  height: 58px;
+  display: block;
+  position: absolute;
+  right: -14px;
+  top: 74px;
+  background: transparent url('/images/carousel/bg/right.png?2') no-repeat left top;
+}
+.carousel .right-button:hover{
+  opacity: 1.0;
+}
+
+.carousel-indicators {
+  height: 11px;
+  list-style: none outside none;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: auto;
+  bottom: -30px;
+  z-index: 0;
+  left: 454px;
+}
+
+.carousel-bubbles li{
+  background: white url('/images/carousel/ui/bubble.png') no-repeat left top;
+  width: 12px;
+  height: 11px;
+  margin-left: 5px;
+  float: left;
+}
+
+.carousel-bubbles li.active{
+  background: white url('/images/carousel/ui/bubble-active.png') no-repeat left top;
+}
+
+.carousel .carousel-inner{
+  height: 200px;
+}
+.carousel .item{
+  height: 200px;
+  width: 940px;
+  margin: 3px;
+  background: transparent url('/images/carousel/bg/inner.png?5') no-repeat left top;
+}
+
+.carousel .item a{
+  float: left;
+  width: 275px;
+  height: 175px;
+  margin: 12px 0 0 2px;
+  border: 2px solid white;
+}
+
+.carousel .item a:hover{
+  opacity: 1.0;
+  border: 2px solid #6d6d70;
+}
+
+
+.carousel .item a.first{
+  margin-left: 33px;
+}
+
+.carousel .item a.second{
+  position: relative;
+  left: 8px;
+}
+
+.carousel .item a.third{
+  position: relative;
+  left: 10px;
+}
+
+/* @end */
+
+.oxford-id{
+  text-align: right;
+}
+
+/* @specific pages */
+.video-js{
+  margin: auto;
+}
+
+body.biff-chip-kipper #hero{
+  background: transparent url(/images/barn/hero/hero-barn-nav-biff.jpg)
+}
+
+body.project-x #hero{
+  background: transparent url(/images/barn/hero/hero-barn-nav-project.jpg)
+}
+
+body.oxford-owl #hero{
+  background: transparent url(/images/barn/hero/hero-barn-nav-owl.jpg)
+}
+
+body.meet-the-team #hero{
+  background: transparent url(/images/barn/hero/hero-barn-nav-meet.jpg)
+}
+
+body.print-out-and-play #hero{
+  background: transparent url(/images/barn/hero/hero-barn-nav-printplay.jpg)
+}
+
+body.oxford-owl #content{
+  background-color: #9c6a45;
+  min-height: 600px;
+  margin-bottom: 50px;
+}
+body.oxford-owl .pods{
+ background-color: white;
+ height: 255px !important;
+ padding: 25px;
+ padding-right: 13px;
+ width: 866px;
+ border-radius: 10px;
+}
+
+section.wallpaper{
+  background: white url(/images/backgrounds/wallpaper-popup.jpg) 22px 0 no-repeat;
+  padding: 120px 0 0 81px;
+  min-height: 600px;
+}
+
+section.wallpaper img{
+  box-shadow: 0 0 10px #888;
+}
+section.wallpaper .small-wallpaper-select{
+  float: left;
+  width: 250px;
+  height: 250px;
+}
+section.wallpaper .small-wallpaper-select select{
+  margin-top: 20px;
+  font-size: 14px;
+}
+section.wallpaper .large-wallpaper-select{
+  text-align: center;
+  width: 500px;
+  position: relative;
+  left: -10px
+}
+section.wallpaper .large-wallpaper-select select{
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+body.video-with-playlist #global-masthead, body.popup-layout #global-masthead {
+  display: none;
+}
+
+#cboxWrapper {
+  overflow: visible;
+}
+
+#cboxClose {
+  visibility: visible;
+  top: -15px;
+  right: -15px;
+}
+
+section#video-body{
+  float:right;
+  width: 625px;
+  margin: 33px 165px 0 0;
+}
+
+section#video-side-body{
+  float:left;
+  width: 180px;
+  padding-left: 20px;
+}
+section#video-side-body h3{
+  margin: 30px 0px 20px 0px;
+  font-family: fs-lola-primary-web, sans-serif;
+  font-weight: bold;
+}
+section#video-side-body ul{
+  margin: 0;
+}
+section#video-side-body li{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+section#video-side-body li a:hover, section#video-side-body li a:active, section#video-side-body li a:focus {
+  background-color: transparent;
+  color: #cf1c6d;
+}
+
+.vjs-default-skin .vjs-big-play-button{
+  position: relative;
+  left: auto;
+  top: 12em;
+  margin: auto;
+}
+/* @end */
+
+.pagination {
+  display: block;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.pagination * {
+  display: inline-block;
+}
+
+.pagination .current{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pagination a {
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 20px;
+  background: none;
+  line-height: 24px;
+  box-shadow: none;
+  border: none;
+}
+
+
+.pagination span.previous_page,  .pagination span.next_page {
+  padding: 0;
+}
+
+
+.pagination .button,  .pagination .previous_page,  .pagination .next_page {
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.pagination .button:hover,  .pagination .previous_page:hover,  .next_page:hover{
+  color: #fff;
+  opacity: 0.9;
+}
+
+.pagination .disabled,  .pagination .disabled:hover{
+  color: #333;
+  cursor: default;
+}
+
+.pagination .button.disabled,
+.pagination .button.disabled:hover,
+.pagination .previous_page.disabled,
+.pagination .previous_page.disabled:hover,
+.pagination .next_page.disabled,
+.pagination .next_page.disabled:hover {
+  filter: none;
+  opacity: 1;
+}
+
+body.confirmation-page-page #main h2, body.confirmation-error-page #main h2{
+  color: #575789;
+  font-weight: normal;
+  font-size: 46px;
+}
+
+.activity-container{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 170px;
+    min-height: 260px;
+    width: 231px;
+}
+.activity-container h3{
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.row-container{
+  display: inline-block;
+  margin-left: 59px;
+  margin-top: 10px;
+  vertical-align:top;
+}
+
+/* Treasure Chest Page */
+
+.treasure-chest-page #content{
+  padding: 0px;
+}
+
+.treasure-chest #hero{
+  left: 0;
+  top: 0;
+  height: 296px !important;
+}
+
+.treasure-chest-page #hero{
+  background: url("/images/backgrounds/OWL_chest_main.png") no-repeat;
+  height: 643px !important;
+}
+
+.treasure-chest-page #float-side-body{
+  display: none;
+}
+
+.treasure-game{
+  float: left;
+  height: 207px !important;
+  padding: 20px 30px 40px;
+  position: relative;
+  width: 265px;
+  color: #2c438f;
+  min-height: 207px;
+  top: -270px;
+  left: 25px;
+  margin-bottom: -250px !important;
+}
+.treasure-game h2{
+  color: #2c438f !important;
+  font-family: fs-lola-primary-web, sans-serif;
+  font-size: 24px;
+}
+.treasure-game a{
+  font-family: fs-lola-primary-web, sans-serif;
+  border-radius: 8px 8px 8px 8px;
+  color: #FFFFFF;
+  display: block;
+  font-size: 18px;
+  white-space: nowrap;
+  font-weight: bold;
+  left: 10px;
+  padding: 9px 40px;
+  position: absolute;
+  top: 179px;
+  width: 100px;
+}
+.treasure-game + .treasure-game a{
+  left:13px;
+}
+.treasure-game:last-of-type a {
+  left:7px;
+}
+/* end */
+
+/* Maths video pod */
+.maths-video-pod{
+  background: -moz-linear-gradient(center top , #FAFAFA, #E9E9E9) repeat scroll 0 0 transparent;
+  border: 1px solid #E7E7E7;
+  border-radius: 7px 7px 7px 7px;
+  float: left;
+  height: 190px;
+  margin: 0 20px 20px 0;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  float: left;
+}
+.maths-video-pod h3{
+  color: white;
+  position: absolute;
+  font-size: 24px;
+  line-height: 24px;
+  left: 20px;
+  width: 230px;
+  text-align: center;
+  top: 15px;
+}
+
+.maths-video-pod a.video-image{
+  position:absolute;
+  top: 75px;
+  left: 177px;
+  background: url(/images/buttons/play-button.png);
+  display: block;
+  width: 48px;
+  height: 46px;
+}
+.maths-video-pod a.video-image:hover{
+  opacity: 0.6;
+}
+.maths-video-pod a.video-link{
+  position: absolute;
+  bottom: 5px;
+  background: #ad91e8;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 10px;
+  left: 65px;
+}
+
+/* end */
+
+
+/* Treasure Chest Games */
+.maths-pod{
+  width: 263px;
+  height: 160px;
+  float: left;
+  position: relative;
+}
+.maths-pod span{
+  position: absolute;
+  left: 204px;
+  top: 106px;
+  font-size: 24px;
+  color: #363636;
+  font-weight: bold;
+  font-family: fs-lola-primary-web, sans-serif;
+}
+/* end */
+
+.simple-math-pod{
+  display: block;
+  float: left;
+  width: 120px;
+  height: 110px;
+  padding: 20px 10px 10px 10px;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  margin: 7px;
+}
+.simple-math-pod:hover{
+  color: white;
+}
+
+.colouring-download{
+  float: left;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.colouring-download img{
+  border: 1px solid black;
+}
+
+.colouring-download span{
+  display: block;
+  width: 150px;
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+/* Kids Barn page */
+.kids-barn-page .pod a {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.kids-barn-page .pod a:hover {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.kids-barn-page .play-with-biff a {
+  left: 15px !important;
+  padding-top: 9px;
+  text-align: center;
+  height: 37px;
+  background: url('/images/buttons/kids_barn/green.png') no-repeat 19px 0px;
+}
+
+.kids-barn-page .pod.find-a-book a {
+  color: #393939;
+  height: 34px;
+  bottom: 26px!important;
+  left: 0px!important;
+  padding-top: 11px;
+  background: url(/images/buttons/kids_barn/orange.png) no-repeat 20px 0px;
+}
+.kids-barn-page .play-with-project-x,
+.kids-barn-page .meet-the-rest-of-the-team {
+  padding-left: 26px;
+  padding-right:89px;
+}
+.kids-barn-page .play-with-project-x a {
+  padding-top: 10px;
+  left: 5px !important;
+  height: 38px;
+  background: url(/images/buttons/kids_barn/green.png) no-repeat 19px 0px;
+}
+.kids-barn-page .play-with-oxford-owl {
+  padding-left:18px;
+  padding-right:100px;
+}
+.kids-barn-page .play-with-oxford-owl a {
+  bottom: 18px!important;
+  left: -3px!important;
+  padding-top: 10px;
+  height: 37px;
+  background: url(/images/buttons/kids_barn/green.png) no-repeat 19px 0px;
+}
+
+.kids-barn-page section.pod.print-and-play, .kids-barn-page section.pod.meet-the-rest-of-the-team, .kids-barn-page section.pod.find-a-book {
+  margin-top: -20px;
+}
+
+.kids-barn-page .print-and-play a {
+  bottom: 26px!important;
+  left: 14px!important;
+  height: 38px;
+  padding-top: 10px;
+  background: url(/images/buttons/kids_barn/green.png) no-repeat 19px 0px;
+}
+.kids-barn-page .meet-the-rest-of-the-team a {
+  bottom: 26px!important;
+  left: 14px!important;
+  height: 38px;
+  padding-top: 9px;
+  background: url('/images/buttons/kids_barn/blue.png') no-repeat 7px 0px;
+}
+.kids-barn-page .meet-the-rest-of-the-team p,
+.kids-barn-page .find-a-book p {
+  width:160px;
+}
+.kids-barn-page .pod.find-a-book {
+  padding-left: 20px;
+  padding-right:96px;
+}
+.kids-barn-page .pods .pod h2 {
+  font-family: fs-lola-primary-web, sans-serif;
+  font-weight: bold;
+  margin: 3px 0px;
+}
+
+.kids-barn-page .pods {
+  background:#9b6a45;
+  height: 273px !important;
+  margin: auto;
+}
+
+.kids-barn-page .unpadded {
+  padding: 0 !important;
+}
+.kids-barn-page #content #wide-body {
+  margin-top: -16px;
+}
+
+.kids-barn-page #content #wide-body img.selected_by_wym {
+  margin-bottom: -6px;
+}
+
+.kids-barn-page .pods:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.character-library-page .pod-container{
+  height: 197px;
+  margin-bottom: 5px;
+}
+
+.character-library-page section#float-side-body, .fun-downloads-page section#float-side-body {
+  height: 346px !important;
+}
+.colouring-in section#float-side-body {
+  height: 323px !important;
+}
+
+.colouring-in-page .pod-container{
+  height: 197px;
+  margin-bottom: 5px;
+}
+.reading-owl.kids-barn.biff-chip-kipper.colouring-in.colouring-in-page section#float-side-body{
+  height: 346px !important;
+}
+
+/* End */
+
+/* Nextsteps popup */
+body.nextsteps{
+  overflow: hidden;
+}
+
+.popup{
+  height: 100%;
+  position: relative;
+}
+.popup-layout, .video-with-playlist{
+  overflow: auto;
+  border-radius: 10px;
+}
+
+body.popup-layout, body.video-with-playlist {
+  overflow: hidden;
+}
+
+body.popup-layout section.container {
+  width: auto;
+}
+
+.nextsteps{
+  background: white url(/images/backgrounds/good-reads-banner.png?2) no-repeat top right;
+}
+
+.nextsteps .content{
+  padding-top: 153px;
+}
+
+.nextsteps h1{
+  margin-bottom: 30px;
+  color: #71c4cd;
+}
+.nextsteps ul{
+  margin-left: 20px;
+}
+
+.nextsteps li{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/* End */
+
+/* Welcome */
+body.welcome-layout, body.welcome-layout-with-side-body, body.ebook-collection-page{
+  background: url("/images/backgrounds/owl_pattern_small.png") repeat scroll 0 0 #f5f5f5;
+}
+
+body.welcome-layout section#main, body.welcome-layout-with-side-body section#main, body.ebook-collection-page section#main{
+  background: white;
+}
+body.welcome-layout section#main, body.welcome-layout-with-side-body section#main, body.for-home-page section#main {
+  margin-top: -23px;
+}
+
+body.welcome-layout #header, body.welcome-layout-with-side-body #header{
+  height: auto;
+}
+body.welcome-layout #header section#info, body.welcome-layout-with-side-body #header section#info{
+  top: 10px;
+  width: 700px;
+}
+body.welcome-layout section#info, body.welcome-layout-with-side-body section#info, p:nth-child(2){
+  background: none;
+}
+body.welcome-page section#main #content{
+  padding: 0 0 0px 33px;
+}
+body.welcome-page section#main #content .buttons a:last-child{
+  margin: 0 0 0 38px;
+}
+body.welcome-page section#main #content .buttons a:last-child img{
+  margin: -50px 0 0 0;
+}
+body.welcome-page #header{
+  height: 370px;
+}
+body.welcome-page #header section#info{
+  top: 20px;
+  width: 950px;
+}
+body.welcome-page section#info p:first-child{
+  margin-bottom: 20px;
+  font-family: fs-lola-primary-web;
+  font-weight: bold;
+}
+body.welcome-page section#info p:nth-child(2){
+  float: left;
+}
+body.welcome-page section#info p:nth-child(3){
+  font-size: 24px;
+  margin: 120px 0 0 460px;
+}
+/*
+body.for-school-page #content{
+  top: 0px;
+}
+
+body.for-school-page #content p:last-child{
+  position: absolute;
+  top: 0;
+  right: 33px;
+}
+*/
+body.for-school-page #content section.right-image {
+    position: absolute;
+    right: 33px;
+    top: 20px;
+}
+
+body.for-school-page #content section.right-image-text {
+    font-size: 22px;
+    left: 40px;
+    line-height: 27px;
+    position: absolute;
+    top: 324px;
+    width: 160px;
+}
+
+.ebook-collection #ebook-header {
+  border-bottom: 9px solid #70c4c7;
+  height: 134px !important;
+  background-color: #fff;
+  margin: 0px;
+}
+
+#ebook-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+  font-family: fs-lola-primary-web,sans-serif;
+  color: #333;
+}
+
+#ebook-content p {
+  width: 70%;
+  font-family: fs-lola-primary-web,sans-serif;
+  color: #333;
+}
+
+.ebook-collection #ebook-content {
+  position: relative;
+  background-color: #fff;
+  margin: 0px;
+  padding: 30px;
+}
+
+.ebook-collection .home-link{
+  display: block;
+  width: 1024px;
+  height: 46px;
+  background: #595959 url("/images/backgrounds/dark_banner_logo.png") no-repeat 26px 10px;
+  position: absolute;
+  left: 0;
+}
+.ebook-collection .for-teacher-banner{
+  position: relative;
+  top: 40px;
+  width: 666px;
+  height: 67px !important;
+  float: left;
+  margin-left: 30px;
+  background: url("/images/backgrounds/eBook_library_logo.png?1") no-repeat;
+}
+
+body.ebook-collection #main-menu{
+  bottom: 22px;
+  left: 0px;
+}
+
+.ebook-collection-page table.booktable th.th-image-book,
+.ebook-collection-page table.booktable th.th-title,
+.ebook-collection-page table.booktable th.th-author,
+.ebook-collection-page table.booktable th.th-series{
+  background: #DEDEDE;
+}
+
+.ebook-collection-page table.booktable tbody td{
+  border-bottom: 2px solid #DEDEDE;
+}
+.ebook-collection-page table.booktable tbody td .btn-booktable{
+  border: 2px solid #DEDEDE;
+}
+.ebook-collection-page  table.booktable th{
+  border-bottom: 7px solid #DEDEDE;
+  color: #1A1A1A;
+}
+/* end */
+
+/* storyteller video page */
+.video-story-box{
+  width: 800px;
+  background: #f7f5e6;
+  margin: 40px 75px !important;
+  padding: 14px 0 0 19px;
+}
+
+p.video-story{
+  margin: 10px;
+}
+
+.video-story-pod{
+  width: 266px;
+  height: 185px;
+  float: left;
+}
+a.storyteller-notes{
+  font-size: 11px;
+  display: block;
+  width: 50px;
+  line-height: 14px;
+  float: right;
+  margin: 3px 18px 0 0;
+}
+/* End */
+
+/* grammar video link */
+.grammar-video-link{
+  height: 110px !important;
+  position: relative;
+  margin: 0px;
+}
+
+section.container section {
+  margin: 0px;
+}
+
+.grammar-video-link img{
+  float: left;
+}
+.grammar-video-link h3, .grammar-video-link a{
+  margin-left: 150px;
+}
+.grammar-video-link h3{
+  line-height: 20px;
+  font-size: 20px;
+}
+.grammar-video-link.nikki-gamble h3, .grammar-video-link.nikki-gamble a{
+  margin-left: 220px;
+}
+/* End */
+
+/* Hideable content */
+a.hideable-content{
+    background: -moz-linear-gradient(center top , #FFFFFF, #E8E8E8) repeat scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+    width: 573px;
+    cursor: pointer;
+}
+
+a.hideable-content span.arrow {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+a.hideable-content span.info{
+  color: white;
+  display: none;
+}
+a.hideable-content.show-info span.info{
+  display: inline-block;
+  padding: 3px 10px 3px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  position: absolute;
+  right: 70px;
+  top: 7px;
+}
+
+.cboxIframe.game {
+  padding: 10px;
+  overflow: hidden;
+}
+.cboxIframe{
+  border-radius: 10px;
+}
+.wf-active{
+  border-radius: 10px;
+}
+.popup-image{
+  text-align: center;
+  padding: 28px;
+}
+/* End */
+
+/* popover */
+.popover{
+  max-width: none;
+  width: 290px;
+}
+
+.popover-close{
+  background: orange url(/images/buttons/popover-close.gif);
+  background-color: #f5f5f5;
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.ebook-collection-page .popover-close{
+  background: #DEDEDE url(/images/buttons/popover-closegrey.gif);
+}
+
+.read-ebook-link{
+  font-family: fs-lola-primary-web,sans-serif;
+  font-weight: bold;
+}
+
+.read-ebook-link:hover, .read-ebook-link:active, .read-ebook-link:focus {
+  color: #cf1c6d;
+  background-color: transparent;
+}
+/* End */
+
+/* task feed */
+ul.feed{
+  list-style: none;
+  margin-left: 50px;
+}
+ul.feed li{
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 38px;
+}
+ul.feed li.current{
+  background: #ffb7b7;
+}
+ul.feed li .asw-right{
+  float: right;
+}
+ul.feed li .asw-left{
+  float: left;
+}
+ul.feed li .asw-left .asw-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+.adventure-selection-widget{
+  text-align: center;
+}
+.adventure-selection-widget select{
+  margin-right: 66px;
+}
+.load-next-feed{
+  float: right;
+  margin-right: 126px;
+}
+/* End */
+
+/* search book finder */
+.search-bookfinder {
+  float: left;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.search-bookfinder form {
+  margin-bottom: 10px;
+}
+.search-bookfinder header {
+  position: relative;
+  background-color: #ddd;
+  border-radius: 7px 7px 0 0;
+  padding-bottom: 10px;
+}
+.search-bookfinder header .label {
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  text-shadow: none;
+  background: none;
+  padding: 10px 7px;
+  display: block;
+}
+.search-bookfinder header .search {
+  border: 1px solid #666;
+  border-radius: 15px;
+  padding: 2px 5px 2px 30px;
+  margin: 0 7px;
+  width: 230px;
+}
+.search-bookfinder header #submit-bookfinder-search {
+  border:0;
+  background: url("/images/buttons/bookfinder/bk-search.png") no-repeat center 8px;
+  width: 25px;
+  height: 25px;
+  text-indent: -999em;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+.search-bookfinder .clear-all,
+.search-bookfinder .show-more-cat {
+  font-size: 12px;
+  text-decoration: underline;
+  padding-left: 7px;
+}
+.search-bookfinder .filters {
+  padding: 7px;
+}
+.search-bookfinder .filters section {
+  margin-bottom: 2px;
+}
+.search-bookfinder .filters .filter-title {
+  display: block;
+  background-color: #ddd;
+  padding: 3px 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.search-bookfinder .filters .filter-title:after {
+  content: "";
+  float: right;
+  margin-top: 6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #333 transparent transparent transparent;
+}
+.search-bookfinder .filters .filter-title.closed:after {
+  margin-top: 4px;
+  border-width: 5px 0 5px 8px;
+  border-color: transparent transparent transparent #333;
+}
+.search-bookfinder .filters ul {
+  margin: 3px 5px 5px;
+  padding:0;
+  list-style: none;
+}
+.search-bookfinder .filters ul li input[type=checkbox] {
+  margin: 0;
+  display: none;
+}
+.search-bookfinder .filters ul li label {
+  display: block;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 13px;
+  background: url("/images/buttons/bookfinder/bk-checkbox.png") no-repeat left 5px;
+}
+.search-bookfinder .filters ul li input[type=checkbox]:checked + label {
+  background-position: left -10px;
+}
+
+.search-bookfinder ~ .ebook-library {
+  width: 670px;
+  padding-left: 300px;
+}
+.search-bookfinder ~ .ebook-library .bookshelf {
+  width: 670px;
+}
+body.book-finder-layout #main-menu ul.find-a-book {
+  border-bottom:0;
+  background: #ddd;
+  height: 50px;
+  padding-left: 250px;
+  width: 774px;
+}
+body.book-finder-layout #main-menu ul.find-a-book li {
+  padding: 0 5px;
+}
+body.book-finder-layout #main-menu ul.find-a-book li a {
+  margin-top:10px;
+  background: none;
+  color: #000;
+  font-size: 20px;
+  height: auto;
+  padding: 0 17px;
+  border-right: 1px solid #000;
+  border-radius:0;
+}
+
+body.book-finder-layout #main-menu ul.find-a-book li:last-of-type a {
+  border-right:0;
+}
+body.book-finder-layout #main-menu ul.find-a-book li.selected a,
+body.book-finder-layout #main-menu ul.find-a-book li a:hover {
+  margin-top: 10px;
+  background-color:#fff;
+  color: #f00;
+  border-color:#fff;
+  border-radius: 10px;
+}
+.ebook-library .tabs {
+   border-bottom: 2px solid #ddd;
+   text-align: center;
+}
+.ebook-library .tabs a {
+   display: inline-block;
+   padding: 5px 10px;
+   border: 2px solid #FFF;
+   border-bottom: 0;
+   box-sizing: border-box;
+   margin-bottom: 0px;
+   background: #CCC;
+   border-radius: 10px 10px 0 0;
+}
+.ebook-library .tabs a.active {
+   background: #FFF;
+   border: 2px solid #ddd;
+   border-bottom-color: #FFF;
+   margin-bottom: -2px;
+}
+
+.ebook-library a{
+  border-bottom:0px;
+}
+
+@media screen and (min-width: 790px) and (max-width: 800px) {
+  #main,
+  #footer,
+  #bottom-links {
+    width: 800px;
+    overflow: hidden;
+  }
+  #header,
+  body.welcome-page section#main #content {
+    padding-left: 15px;
+  }
+  body.welcome-page #header section#info {
+    width: 769px;
+  }
+  body.welcome-page section#info p:nth-child(3) {
+    margin-left: 340px;
+  }
+  body.welcome-page section#main #content .buttons .image-link img {
+    max-width: 46%;
+  }
+  #footer {
+    width: 718px;
+  }
+}
+
+/* group modal_iframe */
+#modal_iframe{
+  z-index: 10000;
+}
+#modal_iframe > iframe{
+  border: 0;
+}
+/* end */
+
+.carousel {
+  position: relative;
+  margin-bottom: 18px;
+  line-height: 1;
+}
+.carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.carousel .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -moz-transition: 0.6s ease-in-out left;
+  -ms-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel .item > img {
+  display: block;
+  line-height: 1;
+}
+.carousel .active,
+.carousel .next,
+.carousel .prev {
+  display: block;
+}
+.carousel .active {
+  left: 0;
+}
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel .next {
+  left: 100%;
+}
+.carousel .prev {
+  left: -100%;
+}
+.carousel .next.left,
+.carousel .prev.right {
+  left: 0;
+}
+.carousel .active.left {
+  left: -100%;
+}
+.carousel .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.carousel-control.right {
+  left: auto;
+  right: 15px;
+}
+.carousel-control:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 15px 5px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+.carousel-caption h4,
+.carousel-caption p {
+  color: #ffffff;
+}
+
+section.game-pod a:hover, section.game-pod a:active, section.game-pod a:visited, section.game-pod a:focus {
+  background-color: transparent;
+}
+
+a.login-close{
+  text-decoration: none;
+}
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999;}
+#cboxOverlay{position:fixed; width:100%; height:100%; opacity: 0.5 !important}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;border-radius: 10px}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxLoadingGraphic{position:absolute; top:0; left:0; background-color: transparent; border-radius: 10px;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;border-radius: 10px;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{outline:0;}
+    #cboxContent{margin-top:20px;background:transparent;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{ padding-right: 15px;}
+        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxLoadingGraphic{background:transparent url(/images/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(/images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(/images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:bottom right;}
+        #cboxClose{position:absolute; top:-15px; right:5px; display:block; background:url(/images/controls.png) no-repeat top center; width:30px; height:29px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:bottom center;}
+
+// from print css
+

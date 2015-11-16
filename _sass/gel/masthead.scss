@@ -1,0 +1,55 @@
+/**
+ * =============================================================================
+ * Global Masthead
+ * =============================================================================
+ *
+ * This file deals with:
+ *  * navigation styles (primary, secondary and tertiary levels)
+ */
+
+.masthead-row {
+  min-height: 48px;
+  position: relative;
+}
+
+#global-masthead a {
+  border: 0;
+}
+
+#global-masthead .container {
+  position: relative;
+  z-index: 3;
+}
+
+#masthead-top {
+  background: #64686c;
+  z-index: 4;
+}
+
+#masthead-bottom {
+  background: #dfe0e1;
+  z-index: 1;
+}
+
+#masthead-top h1 {
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+#masthead-top h1 a {
+  display: block;
+  width: 152px;
+  text-indent: -9999px;
+  background: url(../images/owl-logo.png) no-repeat left top;
+}
+#masthead-top h1 a:hover {
+  background-position: left bottom;
+}
+
+.masthead-row > .container > ul {
+  margin: 0 10px;
+}
+
+.masthead-row .dropdown-menu {
+  min-height: 48px;
+}
