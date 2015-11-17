@@ -1,13 +1,13 @@
 body {
     background-image: none;
     background-color: #B6E4E4;
-    background: #B6E4E4 url(/images/backgrounds/snow-bg.png);
+    background: #B6E4E4 url(http://d1339901mr5ktx.cloudfront.net/2015/11/17/10/51/36/818/snow_bg.png);
     background-attachment: fixed;
     background-opacity: 0.5;
     //animation: animatedBackground 200s linear infinite;
     // background: url(/images/backgrounds/background-footer.jpg) 0 0 no-repeat;
     &:after{
-    	background: transparent url(/images/backgrounds/background-footer.jpg) 0 64px no-repeat;
+    	background: transparent url(http://d1339901mr5ktx.cloudfront.net/2015/11/17/10/50/37/608/background_footer.jpg) 0 64px no-repeat;
       bottom: 0;
     content: " ";
     height: 310px;
@@ -47,7 +47,7 @@ body #content .nav-tabs > li > a {
 	font-size: 23px;
 	padding: 10px 44px;
 	text-decoration: none;
-	margin-right: 15px;
+	margin: 0 0 0 20px;
 	border-top-left-radius: $border-radius;
 	border-top-right-radius: $border-radius;
 	font-weight: bold;
@@ -74,7 +74,7 @@ section#body{
 }
 
 .banner-top{
-	background: $banner-bg-colour url(/images/backgrounds/banner-girl.jpg) 567px -203px no-repeat;
+	background: $banner-bg-colour url(http://d1339901mr5ktx.cloudfront.net/2015/11/17/10/50/38/506/banner_girl.jpg) 567px -203px no-repeat;
 	height: 210px;
 	padding: $page-margin;
 	&:after{
@@ -105,7 +105,7 @@ body.fun-ideas .banner-top h2{
 }
 
 .nav.nav-tabs {
-    margin-top: -41px;
+    margin-top: -39px;
     position: relative;
 }
 
@@ -116,7 +116,7 @@ body.fun-ideas .banner-top h2{
 		color: black;
 	}
 	p {
-		font-size: 17px;
+		font-size: $p-size;
 		line-height: 1.5;
 		margin: 0 0 10px;
 		color: black;
@@ -162,6 +162,26 @@ body.fun-ideas .banner-top h2{
 
 .book-yellow{
 	background-color: $book-yellow;
+}
+
+.book-nixie{
+	background-color: $book-nixie;
+}
+
+.book-olga{
+	background-color: $book-olga;
+}
+
+.book-willows{
+	background-color: $book-willows;
+}
+
+.book-lucy{
+	background-color: $book-lucy;
+}
+
+.book-winnie-alien{
+	background-color: $book-winnie-alien;
 }
 
 .book-image{
@@ -222,10 +242,5 @@ a.btn-gel{
 h3 {
 	font-size: 23px;
 	line-height: 1.5;
-	margin-bottom: 16px;
-}
-
-@keyframes animatedBackground {
-	from { background-position: 0 100%; }
-	to { background-position: 0% 0%; }
+	margin: 4px 0 16px 0;
 }
