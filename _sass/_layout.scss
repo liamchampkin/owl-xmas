@@ -1,13 +1,13 @@
 body {
     background-image: none;
     background-color: #B6E4E4;
-    background: #B6E4E4 url(http://d1339901mr5ktx.cloudfront.net/2015/11/17/10/51/36/818/snow_bg.png);
+    background: #B6E4E4 url(http://cdn.oxfordowl.co.uk/2015/11/19/15/41/45/337/snow_bg.png);
     background-attachment: fixed;
     background-opacity: 0.5;
     //animation: animatedBackground 200s linear infinite;
     // background: url(/images/backgrounds/background-footer.jpg) 0 0 no-repeat;
     &:after{
-    	background: transparent url(http://d1339901mr5ktx.cloudfront.net/2015/11/17/10/50/37/608/background_footer.jpg) 0 64px no-repeat;
+    	background: transparent url(http://cdn.oxfordowl.co.uk/2015/11/19/15/41/45/982/background_footer.jpg) 0 64px no-repeat;
       bottom: 0;
     content: " ";
     height: 310px;
@@ -35,7 +35,7 @@ body {
 
 .tab-content h2 {
 	color: black !important;
-	margin: 20px 0 35px;
+	margin: 35px 0;
 }
 
 body #content .nav-tabs > li > a {
@@ -76,7 +76,7 @@ section#body{
 }
 
 .banner-top{
-	background: $banner-bg-colour url(http://d1339901mr5ktx.cloudfront.net/2015/11/17/10/50/38/506/banner_girl.jpg) 567px -203px no-repeat;
+	background: $banner-bg-colour url(http://cdn.oxfordowl.co.uk/2015/11/19/15/41/45/865/banner_girl.jpg) 567px -203px no-repeat;
 	height: 210px;
 	padding: $page-margin;
 	&:after{
@@ -101,13 +101,15 @@ section#body{
 	}
 }
 
-body.fun-ideas .banner-top h1,
-body.fun-ideas .banner-top h2{
-	color: white;
+body.find-a-book{
+	.banner-top h1,
+	.banner-top h2{
+		color: white;
+	}
 }
 
 .nav.nav-tabs {
-    margin-top: -39px;
+    margin-top: -37px;
     position: relative;
 }
 

@@ -1,0 +1,21 @@
+.resource{
+	border: 5px solid #3E3E3E;
+	min-height: 500px;
+	border-radius: $border-radius;
+	overflow: hidden;
+}
+
+.resource-image {
+	background-size: cover;
+	height: 202px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	img{
+		max-width: none;
+	}
+}
+
+.resource-text{
+	padding: 15px;
+}
