@@ -215,3 +215,8 @@ h3 {
 	line-height: 1.5;
 	margin: 4px 0 16px 0;
 }
+
+//fix for safari
+.for-home #content a:not(.tip-toggle .lesser-bubble-link):hover, a:active {
+  background-color: $pink-gel;
+}
